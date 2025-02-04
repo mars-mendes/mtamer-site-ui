@@ -1,0 +1,28 @@
+
+.cardGroup {
+    width: 100%;
+    height: 100%;
+    &Container {
+      text-align: center;
+    }
+}
+.backgroundImage {
+    background-image: url('/background.jpeg');
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .card {
+    max-width: 100%;
+    height: 12rem;
+    background-color: transparent;
+    padding: 1rem;
+    color: white;
+    border: solid 1px gray;
+    position: relative;
+    z-index: 1;
+    // margin: 0.1rem;
+  }
+  
+  

@@ -1,0 +1,41 @@
+.header {
+    .navL1 {
+        position: fixed;
+        top: 0;
+        background-color: purple;
+        color: white;
+        padding: 32px;
+        height: 2rem;
+        width: 100vw;
+    }
+
+    .navB {
+        position: fixed;
+        top: 0;
+        padding: 32px;
+        padding-top: 1.5rem;
+        height: 100px;
+        width: 100vw;
+        margin-left: 0.01%;
+        background-color: #E2D6C5;
+        color: black;
+        z-index: 10;
+
+        .logoFull {
+            position: relative;
+            max-height: 72px;
+        }
+    }
+
+    .banner {
+        background-color: #E2D6C5;
+        padding: 32px;
+        mask-image: url('/logo-mask.svg');
+        -webkit-mask-image: url('/logo-mask.svg');
+        mask-repeat: no-repeat;
+        mask-position: center;
+        min-height: 650px;
+        min-width: 100%;
+        // z-index: 4;
+    }
+}

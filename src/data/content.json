@@ -1,0 +1,61 @@
+{
+    "quemSomos": {
+        "title": "Quem Somos",
+        "quote": "Proteger os interesses e negócios dos clientes é a nossa principal proposta de valor. Visando promover segurança e rentabilidade, adotamos uma abordagem multidisciplinar, unificada, técnica e cuidadosa sempre em alinhamento com as diferentes necessidades.",
+        "content": "Com experiência em diferentes setores da economia, desenvolvemos nossas atividades com acolhimento, discrição, excelência e profissionalismo. Buscamos assumir o papel de parceiros de nossos clientes, contribuindo para o crescimento de seus negócios de forma segura e serena para que possamos construir e manter bons e duradouros relacionamentos.\nTemos uma cultura dinâmica, de alta competência e multidisciplinariedade, priorizando a composição diversa e o desenvolvimento de nossos profissionais. Desejamos ser reconhecidos pela nossa capacidade de contribuir com novas perspectivas e encontrar soluções que sejam capazes de prever, evitar e remediar adversidades.\nAcreditamos na prestação de serviços de forma humana e oferecemos nossa experiência acumulada nas mais diversas áreas do Direito para atender aos nossos clientes com eficiência e qualidade."
+    },
+    "especsData": [
+        {
+            "title": "Bancário, pagamento e criptoativos",
+            "content": {}
+        },
+        {
+            "title": "Integridade, ESG e Investigações Corporativas",
+            "content": {}
+        },
+        {
+            "title": "Consumo e Publicidade",
+            "content": {}
+        },
+        {
+            "title": "Contencioso, Arbitragem e Solução de Disputas",
+            "content": {}
+        },
+        {
+            "title": "Contratos e negociações",
+            "content": {}
+        },
+        {
+            "title": "Direito Econômico",
+            "content": {}
+        },
+        {
+            "title": "Inteligência Artificial",
+            "content": {}
+        },
+        {
+            "title": "Legal Operations",
+            "content": {}
+        },
+        {
+            "title": "Life Sciences e Saúde",
+            "content": {}
+        },
+        {
+            "title": "Proteção de Dados Pessoais e Cybersecurity",
+            "content": {}
+        },
+        {
+            "title": "Propriedade Intelectual",
+            "content": {}
+        },
+        {
+            "title": "Startups",
+            "content": {}
+        },
+        {
+            "title": "Tributário",
+            "content": {}
+        }
+    ]
+}
