@@ -1,0 +1,36 @@
+.contactUs {
+    font-family: "Space Grotesk", serif;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    .title {
+        border-top: solid 1px black;
+        padding-top: 1%;
+    }
+
+    &Wrapper {
+        margin-left: 2rem;
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &Content {
+        padding-right: 2rem;
+    }
+
+    &Links {
+        margin: 0 2rem;
+        font-size: 1rem;
+        padding-top: 3%;
+        border-top: solid 1px black;
+
+        .link {
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+}

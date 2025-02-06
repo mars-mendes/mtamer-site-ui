@@ -7,6 +7,7 @@ import data from "../data/content.json"
 import styles from "./page.module.scss";
 import Modal from "./components/Modal/Modal";
 import Footer from "./components/Footer/Footer";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 export const ModalContext = createContext({
   isOpen: false,
@@ -47,6 +48,9 @@ export default function Home() {
             <a id="responsabilidade" className={styles.anchor}></a>
             <div className="row justify-content-center" >
               <TextGrid content={data.respSocialCorp} />
+            </div>
+            <div className="row justify-content-center" >
+              <ContactUs content={data.contato} />
             </div>
           </div>
         ) : (

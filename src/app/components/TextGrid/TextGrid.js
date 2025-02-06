@@ -19,7 +19,7 @@ export default function TextGrid(content) {
                 <div className={`col-lg-2 ${styles.title}`}> {data.title} </div>
                 {data.type === 'article' ?
                     (<div className={`col-lg-8 ${styles.contentWrapper}`}>
-                        <div className={`col-lg-6 ${styles.quote}`}> {data.quote} </div>
+                        <div className={`col-lg-4 ${styles.quote}`}> {data.quote} </div>
                         <div className={`col-lg-6 ${styles.textContent}`}>
                             {data.content.split("\n").map((line, i) => (
                                 <p key={i} className={styles.copy}>{line}</p>
@@ -50,6 +50,7 @@ export default function TextGrid(content) {
                                 </div>
                             </div>
                             <div className={`col-lg-6 ${styles.profilePic}`}>
+                                {/* <img src={`${data.profile.picture}`} /> */}
                                 <img src={`/mtamer-site-ui${data.profile.picture}`} />
                             </div>
                         </div>)
