@@ -1,0 +1,16 @@
+.pageWrapper {
+  // display: flex;
+  // flex-wrap: wrap;
+  gap: 1rem 2rem; // Adjust spacing between columns
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  .anchor {
+    padding: 2rem;
+  }
+  &.pageModalWrapper {
+    position: absolute;
+    top: 6.5%;
+  }
+}
