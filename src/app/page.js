@@ -1,95 +1,64 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+import { createContext, useState } from "react";
+import CardGroup from "./components/CardGroup/CardGroup";
+import Header from "./components/Header/Header";
+import TextGrid from "./components/TextGrid/TextGrid";
+import data from "../data/content.json"
+import styles from "./page.module.scss";
+import Modal from "./components/Modal/Modal";
+import Footer from "./components/Footer/Footer";
+
+export const ModalContext = createContext({
+  isOpen: false,
+  setIsOpen: () => { },
+  selectedCard: {},
+  setSelectedCard: () => { },
+  modalType: "",
+  setModalType: () => { }
+});
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalType, setModalType] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+  const modalData = modalType === "profile" ? data.equipe : data.praticas;
+
+  return (
+    <>
+      <ModalContext.Provider value={{ isOpen, setIsOpen, selectedCard, setSelectedCard, modalType, setModalType }}>
+        <div className="row">
+          <Header />
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {!isOpen ? (
+          <div className={`row justify-content-center ${styles.pageWrapper}`}>
+            <a id="quem-somos" className={styles.anchor}></a>
+            <div className="row justify-content-center">
+              <TextGrid content={data.quemSomos} />
+            </div>
+            <a id="praticas" className={styles.anchor}></a>
+            <div className="row justify-content-center">
+              <CardGroup content={data.praticas} />
+            </div>
+            <a id="equipe" className={styles.anchor}></a>
+            <div className="row justify-content-center" >
+              <TextGrid content={data.equipe} />
+            </div>
+            <a id="responsabilidade" className={styles.anchor}></a>
+            <div className="row justify-content-center" >
+              <TextGrid content={data.respSocialCorp} />
+            </div>
+          </div>
+        ) : (
+          <div className={`row ${styles.pageWrapper} ${styles.pageModalWrapper}`} style={{ backgroundColor: "#E2D6C5", overflow: "hidden" }}>
+            <Modal content={modalData} />
+          </div>
+        )
+        }
+      </ModalContext.Provider>
+      <div className="row">
+        <Footer />
+      </div>
+    </>
   );
 }

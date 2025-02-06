@@ -1,0 +1,74 @@
+.header {
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    margin-bottom: 8cqh;
+    &Links {
+        padding: 0.2rem;
+        .links {
+            padding-right: 1rem;
+            color: black;
+            text-decoration: none;
+        }
+    }
+    .navL1 {
+        position: fixed;
+        top: 0;
+        margin-left: 0.01%;
+        background-color: #D9D9D9;
+        color: white;
+        padding: 32px;
+        height: 2rem;
+        width: 100vw;
+        z-index: 10;
+        .logoSmall {
+            max-height: 30px;
+        }
+        .navWrapper {
+            position: absolute;
+            top: 25%;
+        }
+        
+    }
+    
+    .navB {
+        position: fixed;
+        top: 0;
+        padding: 32px;
+        padding-top: 1.5rem;
+        height: 100px;
+        width: 100vw;
+        margin-left: 0.01%;
+        background-color: #E2D6C5;
+        color: black;
+        z-index: 10;
+        .navWrapper {
+            position: absolute;
+            top: 25%;
+        }
+        .logoFull {
+            position: relative;
+            max-height: 72px;
+        }
+    }
+    
+    .banner {
+        background-color: #E2D6C5;
+        padding: 32px;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        min-height: 65cqh;
+        min-width: 100%;
+        margin-left: 0.01%;
+        img {
+            position: relative;
+            top: 15%;
+            left: 11%;
+            margin: 0 auto;
+            mask-image: url('/logo-mask.svg');
+            -webkit-mask-image: url('/logo-mask.svg');
+
+        }
+    }
+}
