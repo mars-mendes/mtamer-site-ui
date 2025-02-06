@@ -49,19 +49,22 @@ export default function Modal(content) {
                                     {copy.split("\n").map((line, i) => (
                                         <p key={i} className={styles.copy}>{line}</p>
                                     ))}
-                                    {topics.map((topic, i) => {
-                                        return (
-                                            <div key={i}>
-                                                <a id={`${topic.id}`} className="anchor" />
-                                                <div className={styles.topics}>
-                                                    <h5>{topic.title}</h5>
-                                                    {topic.copy.split("\n").map((line, i) => (
-                                                        <p key={i} className={styles.copy}>{line}</p>
-                                                    ))}
+                                    {topics ? (
+                                        topics.map((topic, i) => {
+                                            return (
+                                                <div key={i}>
+                                                    <a id={`${topic.id}`} className="anchor" />
+                                                    <div className={styles.topics}>
+                                                        <h5>{topic.title}</h5>
+                                                        {topic.copy.split("\n").map((line, i) => (
+                                                            <p key={i} className={styles.copy}>{line}</p>
+                                                        ))}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        )
-                                    })}
+                                            )
+                                        })
+                                    ) : ""
+                                }
                                 </div>
                                 <div className={`col-lg-3`}>
                                     {/* <img src="/placeholderPic.png" /> */}
