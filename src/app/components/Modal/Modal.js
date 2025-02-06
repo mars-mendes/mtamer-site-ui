@@ -40,7 +40,7 @@ export default function Modal(content) {
                                         )
                                     })}
                                 </div>
-                            ) : ""}
+                            ) : <div className="col-lg-2"></div>}
                             <div className={`col-lg-10 ${styles.contentWrapper}`}>
                                 <div className={`col-lg-7 ${styles.textWrapper}`}>
                                     <p className={styles.modalTitle}>
