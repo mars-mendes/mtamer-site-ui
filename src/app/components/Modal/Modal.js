@@ -64,7 +64,7 @@ export default function Modal(content) {
                                     })}
                                 </div>
                                 <div className={`col-lg-3`}>
-                                    <img src="/mtamer-site-ui/placeholderPic.png" />
+                                    <img src="/placeholderPic.png" />
                                 </div>
                             </div>
                         </>
@@ -103,7 +103,7 @@ export default function Modal(content) {
                                     </div>
                                 </div>
                                 <div className={`col-lg-3`}>
-                                    <img src="/mtamer-site-ui/placeholderPic.png" />
+                                    <img src="/placeholderPic.png" />
                                 </div>
                             </div>
                         </div>
