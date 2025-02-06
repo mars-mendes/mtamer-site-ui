@@ -1,0 +1,86 @@
+.modal {
+    &Actions {
+        min-height: 12cqh;
+        font-size: 20px;
+        .close {
+            margin: 1% 0;
+            cursor: pointer;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        .homeLink {
+            margin: 1% 0;
+            &::before {
+                content: "\2190";
+                padding-right: 0.5%;
+            }
+        }
+    }
+    &Wrapper {
+        font-family: "Space Grotesk", serif;
+        background-color: #E2D6C5;
+        min-width: 100vw;
+        min-height: max-content;
+        position: relative;
+        padding: 1rem;
+        margin-top: -1.5%;
+        margin-left: -0.2%;
+    
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    
+        .toc {
+            border-top: solid 1px black;
+            padding: 1rem;
+            padding-top: 2%;
+            a::before {
+                content: "\2192";
+                padding-right: 2%;
+            }
+        }
+        
+        .contentWrapper {
+            width: 65%;
+            margin-left: 2%;
+            display: flex;
+            flex-direction: row;
+            padding: 1rem;
+            position: relative;
+            max-height: 100%;
+            .textWrapper {
+                min-height: 80cqh;
+                margin-top: -1.5%;
+                border-top: solid 1px black;
+                padding-top: 2%;
+                .modalTitle {
+                    font-size: 2.2rem;
+                    font-weight: 200;
+                }
+            }
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .profile {
+            display: flex;
+            flex-direction: row;
+            &Data {
+                font-size: 2rem;
+                margin-bottom: 8%;
+                font-weight: 350;
+                .role {
+                    color: #736558;
+                }
+            }
+            .boldLabel {
+                padding-top: 2%;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,11 +1,14 @@
 "use client"
 
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useRef, useEffect, useContext } from "react"
 import styles from "./Header.module.scss";
+import { ModalContext } from "../../page";
+
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
     const bannerRef = useRef(null);
+    const { isOpen, setIsOpen } = useContext(ModalContext);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -19,28 +22,78 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const labels = [
+        {
+            label: "Quem somos",
+            url: "#quem-somos"
+        },
+        {
+            label: "Práticas",
+            url: "#praticas"
+        },
+        {
+            label: "Equipe",
+            url: "#equipe"
+        },
+        {
+            label: "Conteúdo",
+            url: "#conteudo"
+        },
+        {
+            label: "Responsabilidade",
+            url: "#responsabilidade"
+        },
+        {
+            label: "Contato",
+            url: "#contato"
+        }
+    ]
+
     return (
         <>
             <div className={`container ${styles.header}`}>
-                {scrolled ?
+                {scrolled || isOpen ?
                     (
                         <div className={`row ${styles.navL1}`}>
-                            <div className={`col-6`}>scrolled</div>
-                            <div className={`col-6`}>scrolled again</div>
+                            <div className={`row ${styles.navWrapper}`}>
+                                <div className={`col-7`} onClick={() => setIsOpen(false)} href="/">
+                                    <img src="/vector.svg" className={styles.logoSmall} />
+                                </div>
+                                <div className={`col-5 ${styles.headerLinks}`}>
+                                    {labels.map((item, i) => {
+                                        return (
+                                            <a key={i} href={item.url} className={`col-2 ${styles.links}`}>{item.label}</a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
                         </div>
                     ) : (
-                        <div className={`row ${styles.navB}`}>
-                            <div className={`col-6`}>
-                                <img src="/logo-full.svg" className={styles.logoFull}/>
+                        <>
+                            <div className={`row ${styles.navB}`}>
+                                <div className={`row ${styles.navWrapper}`}>
+                                    <div className={`col-7`}>
+                                        <img src="/logo-full.svg" className={styles.logoFull} />
+                                    </div>
+                                    <div className={`col-5 ${styles.headerLinks}`}>
+                                        {labels.map((item, i) => {
+                                            return (
+                                                <a key={i} href={item.url} className={`col-2 ${styles.links}`}>{item.label}</a>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
                             </div>
-                            <div className={`col-6`}>test 2</div>
-                        </div>
+                        </>
                     )}
-                <div className={`row ${styles.banner}`} ref={bannerRef}>
-                    <div className="col-12">
-                        {/* <img src="/background.jpeg" /> */}
+                    {!isOpen ? (
+                    <div className={`row ${styles.banner}`} ref={bannerRef}>
+                        <div className="col-12">
+                            <img src="/logo-mask.svg" />
+                        </div>
                     </div>
-                </div>
+                    ) : null
+                }
             </div>
         </>
     )

@@ -1,9 +1,75 @@
 .textGrid {
-    .quote {
-        font-size: 24px;
-        line-height: 2rem;
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    .title {
+        width: 15%;
+        gap: 2rem;
+        padding: 1rem;
+        border-top: solid 1px black;
+        margin-right: 2rem;
+        font-size: 16px;
+        font-weight: 500;
     }
+
     .content {
-        white-space: pre-line;
+        &Wrapper {
+            margin-left: 2rem;
+            margin-bottom: 8%;
+            gap: 2rem;
+            display: flex;
+            flex-direction: row;
+            border-top: solid 1px black;
+
+            .quote {
+                margin-left: -1.1%;
+                font-size: 24px;
+                line-height: 2rem;
+                padding: 1rem 0;
+                padding-right: 2rem;
+                font-weight: 200;
+            }
+
+            .textContent {
+                padding: 1rem;
+                font-size: 16px;
+                line-height: 2rem;
+                white-space: pre-line;
+            }
+        }
+    }
+    .profile {
+        &Wrapper {
+            margin-left: 2rem;
+            gap: 2rem;
+            display: flex;
+            flex-direction: row;
+        }
+        &Content {
+            padding-right: 2rem;
+        }
+        &Data {
+            border-top: solid 1px black;
+            font-size: 2rem;
+            margin-bottom: 12%;
+
+        }
+        &Bio {
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        &Links {
+            font-size: 1rem;
+            margin-top: 3%;
+            padding-top: 3%;
+            border-top: solid 1px black;
+            .link {
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+            }
+
+        }
     }
 }
