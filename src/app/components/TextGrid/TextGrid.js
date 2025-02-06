@@ -50,7 +50,7 @@ export default function TextGrid(content) {
                                 </div>
                             </div>
                             <div className={`col-lg-6 ${styles.profilePic}`}>
-                                <img src={data.profile.picture} />
+                                <img src={`/mtamer-site-ui${data.profile.picture}`} />
                             </div>
                         </div>)
                         : null}
