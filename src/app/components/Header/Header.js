@@ -57,8 +57,8 @@ export default function Header() {
                         <div className={`row ${styles.navL1}`}>
                             <div className={`row ${styles.navWrapper}`}>
                                 <div className={`col-7`} onClick={() => setIsOpen(false)} href="/">
-                                    {/* <img src="/vector.svg" className={styles.logoSmall} /> */}
-                                    <img src="/mtamer-site-ui/vector.svg" className={styles.logoSmall} />
+                                    <img src="/vector.svg" className={styles.logoSmall} />
+                                    {/* <img src="/mtamer-site-ui/vector.svg" className={styles.logoSmall} /> */}
                                 </div>
                                 <div className={`col-5 ${styles.headerLinks}`}>
                                     {labels.map((item, i) => {
@@ -74,8 +74,8 @@ export default function Header() {
                             <div className={`row ${styles.navB}`}>
                                 <div className={`row ${styles.navWrapper}`}>
                                     <div className={`col-7`}>
-                                        {/* <img src="/logo-full.svg" className={styles.logoFull} /> */}
-                                        <img src="/mtamer-site-ui/logo-full.svg" className={styles.logoFull} />
+                                        <img src="/logo-full.svg" className={styles.logoFull} />
+                                        {/* <img src="/mtamer-site-ui/logo-full.svg" className={styles.logoFull} /> */}
                                     </div>
                                     <div className={`col-5 ${styles.headerLinks}`}>
                                         {labels.map((item, i) => {
@@ -91,8 +91,8 @@ export default function Header() {
                     {!isOpen ? (
                     <div className={`row ${styles.banner}`} ref={bannerRef}>
                         <div className="col-12">
-                            {/* <img src="/logo-mask.svg" /> */}
-                            <img src="/mtamer-site-ui/logo-mask.svg" />
+                            <img src="/logo-mask.svg" />
+                            {/* <img src="/mtamer-site-ui/logo-mask.svg" /> */}
                         </div>
                     </div>
                     ) : null
