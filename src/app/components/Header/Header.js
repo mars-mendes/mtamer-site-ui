@@ -58,7 +58,7 @@ export default function Header() {
                             <div className={`row ${styles.navWrapper}`}>
                                 <div className={`col-7`} onClick={() => setIsOpen(false)} href="/">
                                     {/* <img src="/vector.svg" className={styles.logoSmall} /> */}
-                                    <img src="/mtamer-site-ui/logo-mask.png" className={styles.logoSmall} />
+                                    <img src="/mtamer-site-ui/vector.png" className={styles.logoSmall} />
                                 </div>
                                 <div className={`col-5 ${styles.headerLinks}`}>
                                     {labels.map((item, i) => {
