@@ -24,6 +24,7 @@
         z-index: 10;
         .logoSmall {
             max-height: 30px;
+            fill: black;
         }
         .navWrapper {
             position: absolute;
@@ -66,8 +67,8 @@
             top: 15%;
             left: 11%;
             margin: 0 auto;
-            mask-image: url('/logo-mask.png');
-            -webkit-mask-image: url('/logo-mask.png');
+            mask-image: url('/mtamer-site-ui/logo-mask.png');
+            -webkit-mask-image: url('/mtamer-site-ui/logo-mask.png');
 
         }
     }
