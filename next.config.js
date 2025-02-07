@@ -1,9 +1,16 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production';
+const repoName = '/mtamer-site-ui';
+
 const nextConfig = {
-    basePath: "/mtamer-site-ui", //keep this only on dev
-    output: "export",
-    assetPrefix: "./",
-    reactStrictMode: false,
+  basePath: isProd ? repoName : '',
+  assetPrefix: './',
+  output: 'export',
+  reactStrictMode: true,
+  images: {
+    unoptimized: true, 
+  },
 };
 
 export default nextConfig;
