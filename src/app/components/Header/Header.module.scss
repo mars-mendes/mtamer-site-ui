@@ -4,14 +4,42 @@
     font-style: normal;
     display: flex;
     margin-bottom: 8cqh;
+    transition: all 0.3s ease;
+    min-width: 100vw;
+
     &Links {
-        padding: 0.2rem;
-        .links {
-            padding-right: 1rem;
-            color: black;
-            text-decoration: none;
+        &Desktop {
+            padding: 0.2rem;
+
+            .links {
+                padding-right: 2rem;
+                color: black;
+                text-decoration: none;
+            }
+
+            display: block;
+
+            @media(max-width: 1100px) {
+                display: none;
+            }
+        }
+
+        &Mobile {
+            display: none;
+
+            @media(max-width: 1100px) {
+                display: inline-flex;
+
+                img {
+                    position: absolute;
+                    right: 5%;
+                    top: 0;
+
+                }
+            }
         }
     }
+
     .navL1 {
         position: fixed;
         top: 0;
@@ -20,19 +48,21 @@
         color: white;
         padding: 32px;
         height: 2rem;
-        width: 100vw;
+        min-width: 100vw;
         z-index: 10;
+
         .logoSmall {
             max-height: 30px;
             fill: black;
         }
+
         .navWrapper {
             position: absolute;
             top: 25%;
         }
-        
+
     }
-    
+
     .navB {
         position: fixed;
         top: 0;
@@ -44,31 +74,64 @@
         background-color: #E2D6C5;
         color: black;
         z-index: 10;
+
         .navWrapper {
             position: absolute;
             top: 25%;
+
+            .desktop {
+                @media(max-width: 1100px) {
+                    display: none;
+                }
+            }
         }
+
         .logoFull {
             position: relative;
             max-height: 72px;
         }
     }
-    
+
     .banner {
         background-color: #E2D6C5;
         padding: 32px;
         mask-repeat: no-repeat;
         mask-position: center;
         min-height: 65cqh;
-        min-width: 100%;
+        min-width: 100vw;
         margin-left: 0.01%;
+        position: relative;
+        top: 15%;
+        overflow: hidden;
+
+        @media(max-width: 1460px) {
+            min-height: 45cqh;
+        }
+
+        @media(max-width: 1100px) {
+            min-height: 40cqh;
+            max-width: 100%;
+        }
+
         img {
+            overflow: hidden;
             position: relative;
-            top: 15%;
-            left: 11%;
+            top: 5%;
+            // left: -2%;
             margin: 0 auto;
-            mask-image: url('/mtamer-site-ui/logo-mask.png');
-            -webkit-mask-image: url('/mtamer-site-ui/logo-mask.png');
+            min-width: 95cqw;
+            // mask-image: url('/logo-mask.png');
+            // -webkit-mask-image: url('/logo-mask.png');
+            mask-size: fill;
+            mask-repeat: no-repeat;
+
+            @media(max-width: 1460px) {
+                top: 20%;
+                max-width: 60cqw;
+            }
+
+            // mask-image: url('/mtamer-site-ui/logo-mask.png');
+            // -webkit-mask-image: url('/mtamer-site-ui/logo-mask.png');
 
         }
     }

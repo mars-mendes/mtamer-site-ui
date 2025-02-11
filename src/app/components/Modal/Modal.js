@@ -16,17 +16,60 @@ export default function Modal(content) {
         window.scrollTo(0, 0);
     }
 
+    const labels = [
+        {
+            label: "Quem somos",
+            url: "#quem-somos"
+        },
+        {
+            label: "Práticas",
+            url: "#praticas"
+        },
+        {
+            label: "Equipe",
+            url: "#equipe"
+        },
+        {
+            label: "Conteúdo",
+            url: "#conteudo"
+        },
+        {
+            label: "Responsabilidade",
+            url: "#responsabilidade"
+        },
+        {
+            label: "Contato",
+            url: "#contato"
+        }
+    ]
+
     return (
         <div className={`${styles.modalWrapper}`}>
             <div className={styles.backgroundWrapper}>
-                <div className={`row ${styles.modalActions}`}>
-                    <div className={`col-lg-10 ${styles.homeLink}`} >
-                        <a onClick={() => handleReturn()} href="/">
-                            Voltar para página inicial
-                        </a>
+                {modalType != "menu" ? (
+                    <div className={`row ${styles.modalActions}`}>
+                        <div className={`col-lg-10 ${styles.homeLink}`} >
+                            <a onClick={() => handleReturn()} href="/">
+                                Voltar para página inicial
+                            </a>
+                        </div>
+                        <div className={`col-lg-2 ${styles.close}`} onClick={() => handleReturn()}>
+                            {/* <img src="/exit_icon.svg" /> */}
+                            <img src="/mtamer-site-ui/exit_icon.svg" />
+                        </div>
                     </div>
-                    <div className={`col-lg-2 ${styles.close}`} onClick={() => handleReturn()}>X</div>
-                </div>
+                ) : (
+                    <div className={`row ${styles.menuActions}`}>
+                        <div className={`${styles.homeLink} col-lg-7 col-md-3 col-sm-2`} onClick={() => setIsOpen(false)} href="/">
+                            {/* <img src="/vector.svg" className={styles.logoSmall} /> */}
+                            <img src="/mtamer-site-ui/vector.png" className={styles.logoSmall} />
+                        </div>
+                        <div className={`col-lg-2 col-md-3 col-sm-1 ${styles.close}`} onClick={() => handleReturn()}>
+                            {/* <img src="/exit_icon.svg" /> */}
+                            <img src="/mtamer-site-ui/exit_icon.svg" />
+                        </div>
+                    </div>
+                )}
                 <div className={`row ${styles.modal}`}>
                     {modalType === "praticas" ? (
                         <>
@@ -41,11 +84,15 @@ export default function Modal(content) {
                                     })}
                                 </div>
                             ) : <div className="col-lg-2"></div>}
-                            <div className={`col-lg-10 ${styles.contentWrapper}`}>
-                                <div className={`col-lg-7 ${styles.textWrapper}`}>
+                            <div className={`col-lg-10 col-md-8 col-sm-4 ${styles.contentWrapper}`}>
+                                <div className={`col-lg-7 col-md-8 col-sm-4 ${styles.textWrapper}`}>
                                     <p className={styles.modalTitle}>
                                         {selectedCard.content.fullTitle ? selectedCard.content.fullTitle : selectedCard.title}
                                     </p>
+                                    <div className={styles.imgMobile}>
+                                        {/* <img src="/placeholderPic.png" /> */}
+                                        <img src="/mtamer-site-ui/placeholderPic.png" />
+                                    </div>
                                     {copy.split("\n").map((line, i) => (
                                         <p key={i} className={styles.copy}>{line}</p>
                                     ))}
@@ -64,9 +111,9 @@ export default function Modal(content) {
                                             )
                                         })
                                     ) : ""
-                                }
+                                    }
                                 </div>
-                                <div className={`col-lg-3`}>
+                                <div className={`col-lg-3  ${styles.imgDesktop}`}>
                                     {/* <img src="/placeholderPic.png" /> */}
                                     <img src="/mtamer-site-ui/placeholderPic.png" />
                                 </div>
@@ -74,10 +121,10 @@ export default function Modal(content) {
                         </>
                     ) : modalType === "profile" ? (
                         <div className={styles.profile}>
-                            <div className={`col-lg-2 ${styles.empty}`}>
+                            <div className={`col-lg-2 col-md-8 col-sm-4 ${styles.empty}`}>
                             </div>
-                            <div className={`col-lg-10 ${styles.contentWrapper}`}>
-                                <div className={`col-lg-7 ${styles.textWrapper}`}>
+                            <div className={`col-lg-10 col-md-8 col-sm-4 ${styles.contentWrapper}`}>
+                                <div className={`col-lg-7 col-md-8 col-sm-4 ${styles.textWrapper}`}>
                                     {console.log(data)}
                                     <p className={`row ${styles.profileData}`}>
                                         <span>{data.profile.name}</span>
@@ -88,7 +135,7 @@ export default function Modal(content) {
                                     {bio.split("\n").map((line, i) => (
                                         <p key={i} className={styles.copy}>{line}</p>
                                     ))}
-                                    <div className={styles.gradWrapper}>    
+                                    <div className={styles.gradWrapper}>
                                         <p className={styles.boldLabel}>{grad.label}</p>
                                         <ul>
                                             {grad.items.map((item, i) => {
@@ -106,11 +153,21 @@ export default function Modal(content) {
 
                                     </div>
                                 </div>
-                                <div className={`col-lg-3`}>
-                                    {/* <img src="/placeholderPic.png" /> */}
-                                    <img src="/mtamer-site-ui/placeholderPic.png" />
+                                <div className={`col-lg-3 ${styles.imgDesktop}`}>
+                                    <img src="/placeholderPic.png" />
+                                    {/* <img src="/mtamer-site-ui/placeholderPic.png" /> */}
                                 </div>
                             </div>
+                        </div>
+                    ) : modalType === "menu" ? (
+                        <div className={`container ${styles.menuContainer}`}>
+                            {labels.map((item, i) => {
+                                const border = i === labels.length - 1 ? '1px solid black' : 'none';
+                                console.log(i, labels.length)
+                                return (
+                                    <a key={i} href={item.url} className={`row ${styles.menuLinks}`} onClick={() => setIsOpen(false)} style={{ borderBottom: border }}>{item.label}</a>
+                                )
+                            })}
                         </div>
                     ) : null
                     }
