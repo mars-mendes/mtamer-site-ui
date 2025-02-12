@@ -1,0 +1,159 @@
+@charset "UTF-8";
+.modalActions {
+  min-height: 12cqh;
+  font-size: 20px;
+}
+.modalActions .close {
+  margin: 1% 0;
+  cursor: pointer;
+  font-weight: lighter;
+}
+.modalActions .close img {
+  max-width: 20px;
+  max-height: 20px;
+}
+@media (max-width: 620px) {
+  .modalActions .close {
+    margin-left: 85%;
+  }
+}
+.modalActions .homeLink {
+  margin: 1% 0;
+  display: block;
+}
+.modalActions .homeLink::before {
+  content: "←";
+  padding-right: 0.5%;
+}
+@media (max-width: 620px) {
+  .modalActions .homeLink {
+    display: none;
+  }
+}
+.modalWrapper {
+  font-family: "Space Grotesk", serif;
+  background-color: #E2D6C5;
+  min-width: 100vw;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  position: relative;
+  padding: 1rem;
+  top: 0;
+  margin-left: -0.2%;
+}
+.modalWrapper a {
+  text-decoration: none;
+  color: black;
+}
+.modalWrapper .toc {
+  border-top: solid 1px black;
+  padding: 1rem;
+  padding-top: 2%;
+  display: block;
+}
+@media (max-width: 620px) {
+  .modalWrapper .toc {
+    display: none;
+  }
+}
+.modalWrapper .toc a::before {
+  content: "→";
+  padding-right: 2%;
+}
+.modalWrapper .contentWrapper {
+  width: 65%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  position: relative;
+  max-height: 100%;
+}
+.modalWrapper .contentWrapper .imgDesktop {
+  display: block;
+}
+.modalWrapper .contentWrapper .imgMobile {
+  display: none;
+}
+@media (max-width: 620px) {
+  .modalWrapper .contentWrapper {
+    width: 80vw;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .modalWrapper .contentWrapper .imgDesktop {
+    display: none;
+  }
+  .modalWrapper .contentWrapper .imgMobile {
+    display: block;
+  }
+  .modalWrapper .contentWrapper .imgMobile img {
+    max-width: 80vw;
+    margin: 1rem 0;
+  }
+}
+@media (min-width: 621px) {
+  .modalWrapper .contentWrapper img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.modalWrapper .contentWrapper .textWrapper {
+  min-height: 80cqh;
+  margin-top: -1.5%;
+  border-top: solid 1px black;
+  padding-top: 2%;
+}
+.modalWrapper .contentWrapper .textWrapper .modalTitle {
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+.modalWrapper .profile {
+  display: flex;
+  flex-direction: row;
+}
+.modalWrapper .profileData {
+  font-size: 2rem;
+  margin-bottom: 8%;
+  font-weight: 350;
+}
+.modalWrapper .profileData .role {
+  color: #736558;
+}
+.modalWrapper .profile .boldLabel {
+  padding-top: 2%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.modalWrapper .menuContainer {
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-width: 100%;
+  margin-top: 5%;
+}
+.modalWrapper .menuContainer .menuLinks {
+  font-weight: 450;
+  font-size: 1.3rem;
+  padding: 1rem;
+  width: 99%;
+  border-top: solid 1px black;
+}
+.modalWrapper .menuActions {
+  position: relative;
+  min-width: 100vw;
+  margin-bottom: 7%;
+  top: -1rem;
+}
+.modalWrapper .menuActions .logoSmall {
+  max-height: 25px;
+  fill: black;
+}
+.modalWrapper .menuActions .close {
+  position: absolute;
+  margin-left: 85%;
+}
+.modalWrapper .menuActions .close img {
+  max-width: 20px;
+  max-height: 20px;
+}/*# sourceMappingURL=Modal.module.css.map */

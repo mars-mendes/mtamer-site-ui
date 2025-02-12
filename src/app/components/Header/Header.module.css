@@ -1,0 +1,122 @@
+.header {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  margin-bottom: 8cqh;
+  transition: all 0.3s ease;
+  min-width: 100vw;
+}
+.headerLinksDesktop {
+  padding: 0.2rem;
+  display: block;
+}
+.headerLinksDesktop .links {
+  padding-right: 2rem;
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 1100px) {
+  .headerLinksDesktop {
+    display: none;
+  }
+}
+.headerLinksMobile {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .headerLinksMobile {
+    display: inline-flex;
+  }
+  .headerLinksMobile img {
+    position: absolute;
+    right: 5%;
+    top: 0;
+  }
+}
+.header .navL1 {
+  position: fixed;
+  top: 0;
+  margin-left: 0.01%;
+  background-color: #D9D9D9;
+  color: white;
+  padding: 32px;
+  height: 2rem;
+  min-width: 100vw;
+  z-index: 10;
+}
+.header .navL1 .logoSmall {
+  max-height: 30px;
+  fill: black;
+}
+.header .navL1 .navWrapper {
+  position: absolute;
+  top: 25%;
+}
+.header .navB {
+  position: fixed;
+  top: 0;
+  padding: 32px;
+  padding-top: 1.5rem;
+  height: 100px;
+  width: 100vw;
+  margin-left: 0.01%;
+  background-color: #E2D6C5;
+  color: black;
+  z-index: 10;
+}
+.header .navB .navWrapper {
+  position: absolute;
+  top: 25%;
+}
+@media (max-width: 1100px) {
+  .header .navB .navWrapper .desktop {
+    display: none;
+  }
+}
+.header .navB .logoFull {
+  position: relative;
+  max-height: 72px;
+}
+.header .banner {
+  background-color: #E2D6C5;
+  padding: 32px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  min-height: 65cqh;
+  min-width: 100vw;
+  margin-left: 0.01%;
+  position: relative;
+  top: 15%;
+  overflow: hidden;
+}
+@media (max-width: 1460px) {
+  .header .banner {
+    min-height: 45cqh;
+  }
+}
+@media (max-width: 1100px) {
+  .header .banner {
+    min-height: 40cqh;
+    max-width: 100%;
+  }
+}
+.header .banner img {
+  overflow: hidden;
+  position: relative;
+  top: 5%;
+  margin: 0 auto;
+  min-width: 95cqw;
+  -webkit-mask-size: fill;
+          mask-size: fill;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+@media (max-width: 1460px) {
+  .header .banner img {
+    top: 20%;
+    max-width: 60cqw;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

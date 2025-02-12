@@ -1,0 +1,22 @@
+.pageWrapper {
+  display: -webkit-box;
+  gap: 1rem 2rem;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  overflow-x: hidden !important;
+}
+.pageWrapper .anchor {
+  padding: 2rem;
+}
+.pageWrapper.pageModalWrapper {
+  position: absolute;
+  top: 3.9%;
+}
+.pageWrapper.pageMenuWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 99vw;
+  overflow: hidden !important;
+}/*# sourceMappingURL=page.module.css.map */

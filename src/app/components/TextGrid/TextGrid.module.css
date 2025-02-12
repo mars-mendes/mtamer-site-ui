@@ -1,0 +1,161 @@
+.textGrid {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.textGrid:first-of-type {
+  margin-top: 5rem;
+}
+@media (max-width: 1100px) {
+  .textGrid {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+.textGrid .title {
+  width: 15%;
+  gap: 2rem;
+  padding: 1rem;
+  border-top: solid 1px black;
+  margin-right: 2rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 1100px) {
+  .textGrid .title {
+    display: none;
+  }
+}
+.textGrid .titleMobile {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .textGrid .titleMobile {
+    position: relative;
+    padding: 1rem 0;
+    min-width: 9rem;
+    max-width: 12rem;
+    margin-left: 0.3rem;
+    display: block;
+    border-top: solid 1px black;
+    margin-bottom: 3rem;
+    text-align: start;
+  }
+  .textGrid .titleMobile .titleString {
+    position: absolute;
+    left: -8%;
+  }
+}
+.textGrid .contentWrapper {
+  margin-left: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  border-top: solid 1px black;
+}
+@media (max-width: 1460px) {
+  .textGrid .contentWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1100px) {
+  .textGrid .contentWrapper {
+    margin-left: -2%;
+    flex-direction: row !important;
+    border-top: none;
+    gap: 0.05rem;
+  }
+}
+@media (max-width: 620px) {
+  .textGrid .contentWrapper {
+    flex-direction: column !important;
+  }
+}
+.textGrid .contentWrapper .quote {
+  margin-left: -1.1%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem 0;
+  padding-right: 1.5rem;
+  font-weight: 200;
+}
+@media (max-width: 1100px) {
+  .textGrid .contentWrapper .quote {
+    border-top: solid 1px black;
+  }
+}
+.textGrid .contentWrapper .textContent {
+  display: block;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+@media (max-width: 620px) {
+  .textGrid .contentWrapper .textContent {
+    display: none;
+  }
+}
+.textGrid .contentWrapper .textReadMore {
+  padding-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  display: none;
+}
+@media (max-width: 620px) {
+  .textGrid .contentWrapper .textReadMore {
+    white-space: pre-line;
+    display: block;
+    border-top: solid 1px black;
+  }
+}
+.textGrid .profileWrapper {
+  margin-left: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+@media (max-width: 620px) {
+  .textGrid .profileWrapper {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+.textGrid .profileContent {
+  padding-right: 2rem;
+}
+@media (max-width: 620px) {
+  .textGrid .profileContent {
+    padding: none;
+  }
+}
+.textGrid .profileData {
+  border-top: solid 1px black;
+  font-size: 2rem;
+  margin-bottom: 12%;
+}
+.textGrid .profileBio {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.textGrid .profileLinks {
+  font-size: 1rem;
+  margin-top: 3%;
+  padding-top: 3%;
+  border-top: solid 1px black;
+  display: flex;
+  flex-direction: column;
+}
+.textGrid .profileLinks .link {
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.textGrid .profilePic {
+  position: relative;
+  left: -10%;
+  bottom: 0;
+}/*# sourceMappingURL=TextGrid.module.css.map */

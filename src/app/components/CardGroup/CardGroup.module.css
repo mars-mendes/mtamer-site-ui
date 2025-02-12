@@ -1,0 +1,48 @@
+.cardGroup {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 100%;
+  height: 100%;
+}
+.cardGroupTitle {
+  border-top: solid 1px black;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+.cardGroupTitleWrapper {
+  min-width: 90%;
+  margin-left: -2%;
+  padding: 2rem;
+}
+.cardGroupContainer {
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.content .card {
+  cursor: pointer;
+  max-width: 100%;
+  min-height: 12rem;
+  background-color: transparent;
+  padding: 1rem;
+  color: black;
+  border-collapse: separate;
+  position: relative;
+}
+.content .cardWrapper {
+  position: relative;
+  background-color: white;
+}
+.content .card:hover {
+  background-color: #E2D6C5;
+}
+@media (max-width: 620px) {
+  .content .card {
+    max-width: 50%;
+  }
+}/*# sourceMappingURL=CardGroup.module.css.map */
