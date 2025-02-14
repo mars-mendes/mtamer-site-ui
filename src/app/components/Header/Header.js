@@ -79,12 +79,12 @@ export default function Header() {
                                     <div className={`row ${styles.navL1}`}>
                                         <div className={`row ${styles.navWrapper}`}>
                                             <div className={`col-lg-7 col-md-3 col-sm-3`} onClick={() => setIsOpen(false)} href="/">
-                                                {/* <img src="/vector.svg" className={styles.logoSmall} /> */}
-                                                <img src="/mtamer-site-ui/vector.png" className={styles.logoSmall} />
+                                                <img src="/vector.svg" className={styles.logoSmall} />
+                                                {/* <img src="/mtamer-site-ui/vector.png" className={styles.logoSmall} /> */}
                                             </div>
                                             <div className={`col-lg-1 col-md-1 col-sm-1 ${styles.headerLinksMobile}`} onClick={() => handleMenu()}>
-                                                {/* <img src="/menu.svg" /> */}
-                                                <img src="/mtamer-site-ui/menu.svg"/>
+                                                <img src="/menu.svg" />
+                                                {/* <img src="/mtamer-site-ui/menu.svg"/> */}
                                             </div>
                                             <div className={`col-lg-5 col-sm-0 ${styles.headerLinksDesktop}`}>
                                                 {labels.map((item, i) => {
@@ -102,8 +102,8 @@ export default function Header() {
                                 <div className={`row ${styles.navB}`}>
                                     <div className={`row ${styles.navWrapper}`}>
                                         <div className={`col-lg-7 col-md-6 col-sm-3`}>
-                                            {/* <img src="/logo-full.svg" className={styles.logoFull} /> */}
-                                            <img src="/mtamer-site-ui/logo-full.svg" className={styles.logoFull} />
+                                            <img src="/logo-full.svg" className={styles.logoFull} />
+                                            {/* <img src="/mtamer-site-ui/logo-full.svg" className={styles.logoFull} /> */}
                                         </div>
                                         <div className={`col-lg-5 ${styles.headerLinksDesktop}`}>
                                             {labels.map((item, i) => {
@@ -113,8 +113,8 @@ export default function Header() {
                                             })}
                                         </div>
                                         <div className={`col-md-2 col-sm-1 ${styles.headerLinksMobile}`} onClick={() => handleMenu()}>
-                                            {/* <img src="/menu.svg" /> */}
-                                            <img src="/mtamer-site-ui/menu.svg"/>
+                                            <img src="/menu.svg" />
+                                            {/* <img src="/mtamer-site-ui/menu.svg"/> */}
                                         </div>
                                     </div>
                                 </div>
@@ -125,8 +125,8 @@ export default function Header() {
                     {!isOpen ? (
                         <div className={`row ${styles.banner}`} ref={bannerRef}>
                             <div className="col-lg-12 col-md-6 col-sm-4">
-                                {/* <img src="/logo-mask.png" /> */}
-                                <img src="/mtamer-site-ui/logo-mask.png" />
+                                <img src="/logo-mask.svg" />
+                                {/* <img src="/mtamer-site-ui/logo-mask.png" /> */}
                             </div>
                         </div>
                     ) : null

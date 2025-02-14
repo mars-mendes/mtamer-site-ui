@@ -43,13 +43,14 @@
     .navL1 {
         position: fixed;
         top: 0;
-        margin-left: 0.01%;
+        margin-left: 2%;
         background-color: #D9D9D9;
         color: white;
         padding: 32px;
         height: 2rem;
         min-width: 100vw;
         z-index: 10;
+
 
         .logoSmall {
             max-height: 30px;
@@ -69,8 +70,8 @@
         padding: 32px;
         padding-top: 1.5rem;
         height: 100px;
-        width: 100vw;
-        margin-left: 0.01%;
+        width: 100cqw;
+        margin-left: 2%;
         background-color: #E2D6C5;
         color: black;
         z-index: 10;
@@ -78,6 +79,8 @@
         .navWrapper {
             position: absolute;
             top: 25%;
+            background-color: #E2D6C5;
+            min-width: 100vw;
 
             .desktop {
                 @media(max-width: 1100px) {
@@ -98,10 +101,11 @@
         mask-repeat: no-repeat;
         mask-position: center;
         min-height: 65cqh;
-        min-width: 100vw;
+        min-width: 100cqw;
         margin-left: 0.01%;
         position: relative;
-        top: 15%;
+        top: 12%;
+        left: 5%;
         overflow: hidden;
 
         @media(max-width: 1460px) {
@@ -116,8 +120,7 @@
         img {
             overflow: hidden;
             position: relative;
-            top: 5%;
-            // left: -2%;
+            left: 0;
             margin: 0 auto;
             min-width: 95cqw;
             // mask-image: url('/logo-mask.png');

@@ -54,19 +54,19 @@ export default function Modal(content) {
                             </a>
                         </div>
                         <div className={`col-lg-2 ${styles.close}`} onClick={() => handleReturn()}>
-                            {/* <img src="/exit_icon.svg" /> */}
-                            <img src="/mtamer-site-ui/exit_icon.svg" />
+                            <img src="/exit_icon.svg" />
+                            {/* <img src="/mtamer-site-ui/exit_icon.svg" /> */}
                         </div>
                     </div>
                 ) : (
                     <div className={`row ${styles.menuActions}`}>
                         <div className={`${styles.homeLink} col-lg-7 col-md-3 col-sm-2`} onClick={() => setIsOpen(false)} href="/">
-                            {/* <img src="/vector.svg" className={styles.logoSmall} /> */}
-                            <img src="/mtamer-site-ui/vector.png" className={styles.logoSmall} />
+                            <img src="/vector.svg" className={styles.logoSmall} />
+                            {/* <img src="/mtamer-site-ui/vector.png" className={styles.logoSmall} /> */}
                         </div>
                         <div className={`col-lg-2 col-md-3 col-sm-1 ${styles.close}`} onClick={() => handleReturn()}>
-                            {/* <img src="/exit_icon.svg" /> */}
-                            <img src="/mtamer-site-ui/exit_icon.svg" />
+                            <img src="/exit_icon.svg" />
+                            {/* <img src="/mtamer-site-ui/exit_icon.svg" /> */}
                         </div>
                     </div>
                 )}
@@ -90,8 +90,8 @@ export default function Modal(content) {
                                         {selectedCard.content.fullTitle ? selectedCard.content.fullTitle : selectedCard.title}
                                     </p>
                                     <div className={styles.imgMobile}>
-                                        {/* <img src="/placeholderPic.png" /> */}
-                                        <img src="/mtamer-site-ui/placeholderPic.png" />
+                                        <img src="/placeholderPic.png" />
+                                        {/* <img src="/mtamer-site-ui/placeholderPic.png" /> */}
                                     </div>
                                     {copy.split("\n").map((line, i) => (
                                         <p key={i} className={styles.copy}>{line}</p>
@@ -114,8 +114,8 @@ export default function Modal(content) {
                                     }
                                 </div>
                                 <div className={`col-lg-3  ${styles.imgDesktop}`}>
-                                    {/* <img src="/placeholderPic.png" /> */}
-                                    <img src="/mtamer-site-ui/placeholderPic.png" />
+                                    <img src="/placeholderPic.png" />
+                                    {/* <img src="/mtamer-site-ui/placeholderPic.png" /> */}
                                 </div>
                             </div>
                         </>
