@@ -1,0 +1,51 @@
+.contactUs {
+    font-family: "Space Grotesk", serif;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    @media(max-width: 620px) {
+        flex-direction: column;
+    }
+
+    .title {
+        border-top: solid 1px black;
+        padding-top: 1%;
+    }
+
+    &Wrapper {
+        margin-left: 2rem;
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+
+        @media(max-width: 620px) {
+            flex-direction: column;
+        }
+    }
+
+    &Content {
+        padding-right: 2rem;
+    }
+
+    &Links {
+        margin: 0 2rem;
+        font-size: 1rem;
+        padding-top: 3%;
+        border-top: solid 1px black;
+        @media(max-width: 620px) {
+            margin-top: 2rem;
+            margin-left: -2rem;
+            padding-top: 5%;
+            max-width: 99cqw;
+            min-width: 81.3cqw;
+        }
+
+        .link {
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+}

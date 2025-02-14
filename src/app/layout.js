@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
           @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
         </style>
       </head>
-      <body>
+      <body style={{overflowX: 'hidden!important'}}>
         {children}
       </body>
     </html>

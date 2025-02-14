@@ -7,6 +7,7 @@ import data from "../data/content.json"
 import styles from "./page.module.scss";
 import Modal from "./components/Modal/Modal";
 import Footer from "./components/Footer/Footer";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 export const ModalContext = createContext({
   isOpen: false,
@@ -23,9 +24,10 @@ export default function Home() {
   const [selectedCard, setSelectedCard] = useState(null);
 
   const modalData = modalType === "profile" ? data.equipe : data.praticas;
+  const modalClass = modalType === "menu" ? styles.pageMenuWrapper : styles.pageModalWrapper
 
   return (
-    <>
+    <div style={{maxWidth: '100vw'}}>
       <ModalContext.Provider value={{ isOpen, setIsOpen, selectedCard, setSelectedCard, modalType, setModalType }}>
         <div className="row">
           <Header />
@@ -48,17 +50,23 @@ export default function Home() {
             <div className="row justify-content-center" >
               <TextGrid content={data.respSocialCorp} />
             </div>
+            <a id="contato" className={styles.anchor}></a>
+            <div className="row justify-content-center" >
+              <ContactUs content={data.contato} />
+            </div>
           </div>
         ) : (
-          <div className={`row ${styles.pageWrapper} ${styles.pageModalWrapper}`} style={{ backgroundColor: "#E2D6C5", overflow: "hidden" }}>
+          <div className={`row ${styles.pageWrapper} ${modalClass}`} style={{ backgroundColor: "#E2D6C5", overflowX: "hidden!important" }}>
             <Modal content={modalData} />
           </div>
         )
         }
       </ModalContext.Provider>
-      <div className="row">
-        <Footer />
-      </div>
-    </>
+      {!isOpen ? (
+        <div className="row">
+          <Footer />
+        </div>
+      ) : null}
+    </div>
   );
 }

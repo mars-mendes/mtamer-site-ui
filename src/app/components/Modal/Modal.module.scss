@@ -2,20 +2,34 @@
     &Actions {
         min-height: 12cqh;
         font-size: 20px;
+
         .close {
             margin: 1% 0;
             cursor: pointer;
-            font-size: 40px;
             font-weight: lighter;
+            img {
+                max-width: 20px;
+                max-height: 20px;
+            }
+            @media(max-width: 620px){
+                margin-left: 85%;
+            }
         }
+
         .homeLink {
             margin: 1% 0;
+
             &::before {
                 content: "\2190";
                 padding-right: 0.5%;
             }
+            display: block;
+            @media(max-width: 620px){
+                display: none;
+            }
         }
     }
+
     &Wrapper {
         font-family: "Space Grotesk", serif;
         background-color: #E2D6C5;
@@ -23,24 +37,29 @@
         min-height: max-content;
         position: relative;
         padding: 1rem;
-        margin-top: -1.5%;
+        top: 0;
         margin-left: -0.2%;
-    
+
         a {
             text-decoration: none;
             color: black;
         }
-    
+
         .toc {
             border-top: solid 1px black;
             padding: 1rem;
             padding-top: 2%;
+            display: block;
+            @media(max-width: 620px){
+                display: none;
+            }
+
             a::before {
                 content: "\2192";
                 padding-right: 2%;
             }
         }
-        
+
         .contentWrapper {
             width: 65%;
             margin-left: 2%;
@@ -49,37 +68,106 @@
             padding: 1rem;
             position: relative;
             max-height: 100%;
+            .imgDesktop {
+                display: block;
+            }
+            .imgMobile {
+                display: none;
+            }
+            @media(max-width: 620px){
+                width: 80vw;
+                flex-direction: column;
+                margin-left: 0;
+                .imgDesktop {
+                    display: none;
+                }
+                .imgMobile {
+                    display: block;
+                    img {
+                        max-width: 80vw;
+                        margin: 1rem 0;
+                    }
+                }
+            }
+
+            @media(min-width: 621px){
+                img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
             .textWrapper {
                 min-height: 80cqh;
                 margin-top: -1.5%;
                 border-top: solid 1px black;
                 padding-top: 2%;
+
                 .modalTitle {
                     font-size: 2.2rem;
                     font-weight: 200;
                 }
             }
-            img {
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
         }
+
+        // profile
         .profile {
             display: flex;
             flex-direction: row;
+
             &Data {
                 font-size: 2rem;
                 margin-bottom: 8%;
                 font-weight: 350;
+
                 .role {
                     color: #736558;
                 }
             }
+
             .boldLabel {
                 padding-top: 2%;
                 font-size: 1.2rem;
                 font-weight: 500;
+            }
+        }
+
+        //  menu
+        .menu {
+            &Container {
+                overflow-x: hidden;
+                min-height: 100vh;
+                min-width: 100%;
+                margin-top: 5%;
+
+                .menuLinks {
+                    font-weight: 450;
+                    font-size: 1.3rem;
+                    padding: 1rem;
+                    width: 99%;
+                    border-top: solid 1px black;
+
+                }
+            }
+
+            &Actions {
+                position: relative;
+                min-width: 100vw;
+                margin-bottom: 7%;
+                top: -1rem;
+                .logoSmall {
+                    max-height: 25px;
+                    fill: black;
+                }
+                .close {
+                    position: absolute;
+                    margin-left: 85%;
+                    img {
+                        max-width: 20px;
+                        max-height: 20px;
+                    }
+                }
             }
         }
     }
