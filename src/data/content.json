@@ -10,6 +10,7 @@
         "especsData": [
             {
                 "title": "Bancário, pagamento e criptoativos",
+                "imageSrc": "/modals/bancario.png",
                 "content": {
                     "fullTitle": "Bancário, meios de pagamento, serviços financeiros e criptoativos",
                     "copy": "Oferecemos consultoria em serviços ligados às instituições financeiras, às instituições de pagamento e às outras entidades supervisionadas pelo Banco Central do Brasil e pela Comissão de Valores Mobiliários. \n\nSomados às demais práticas do escritório, prestamos serviços a entidades nacionais e internacionais do setor, incluindo bancos, varejistas, emissores, adquirentes, facilitadores, agentes de comércio eletrônico, provedores de serviços de pagamento, gateways e outros participantes da indústria. \n\nCom atuação e expertise dedicada às práticas envolvendo criptoativos, assessoramos instituições autorizadas a funcionar pelo Banco Central na estruturação de produtos e serviços envolvendo criptoativos, negociação de contratos, elaboração ou revisão de políticas, termos e manuais, ativos de propriedade intelectual, tributação, entre outras necessidades do setor."
@@ -17,6 +18,7 @@
             },
             {
                 "title": "Integridade, ESG e Investigações Corporativas",
+                "imageSrc": "/modals/integridade.png",
                 "content": {
                     "fullTitle": "Compliance, Integridade, ESG, Direitos Humanos e Investigações Corporativas",
                     "copy": "Assessoramos nossos clientes na consolidação de atividades e operações responsáveis, em conformidade com a legislação e demonstração da promoção do bem-estar social e a integridade na condução dos negócios. Nossos principais produtos e serviços incluem:",
@@ -53,42 +55,49 @@
             },
             {
                 "title": "Consumo e Publicidade",
+                "imageSrc": "/modals/consumo.png",
                 "content": {
                     "copy": "Nosso escritório oferece uma abordagem abrangente e estratégica para questões relacionadas ao direito do consumidor, buscando sempre fortalecer as relações de consumo de nossos clientes e agregar valor aos seus negócios. Atendemos empresas de diversos setores, incluindo farmacêutico, alimentício, financeiro, varejo, saúde, educação, comunicação, entre outros, oferecendo soluções personalizadas para atender às suas necessidades específicas.\n\nAtuamos de forma preventiva, auxiliando na estruturação de modelos de negócios seguros e eficientes, com o objetivo de reduzir riscos e evitar litígios. Nossa prática inclui o acompanhamento de mudanças legislativas, elaboração de pareceres para a expansão de atividades, apoio em situações de crise e participação em audiências e consultas públicas junto aos órgãos de defesa do consumidor. Também prestamos suporte na elaboração e revisão de contratos e promovemos treinamentos e capacitações para equipes empresariais, garantindo a conformidade com as normas aplicáveis.\nNo âmbito administrativo, temos vasta experiência em procedimentos junto a órgãos como Procons, Senacon e outras entidades reguladoras. Oferecemos assistência em negociações de Termos de Ajustamento de Conduta (TACs), inquéritos civis e campanhas de recall, além de lidar com questões regulatórias em mercados específicos e assuntos relacionados à proteção de dados dos consumidores. Nossa atuação é coordenada e ágil, visando minimizar impactos para nossos clientes.\n\nEm disputas judiciais, representamos empresas em casos de alta complexidade, como ações coletivas e anulatórias, além de processos estratégicos nos Tribunais Superiores. Estamos preparados para lidar com demandas repetitivas, utilizando instrumentos processuais específicos para proteger os interesses de nossos clientes. Nosso compromisso é oferecer soluções eficazes e alinhadas às necessidades de cada empresa, garantindo uma defesa sólida e assertiva em todas as instâncias.\n\nTambém atuamos em relação às iniciativas e práticas de publicidade dos clientes, incluindo o suporte jurídico aos projetos, contratação de agências, influencers etc., a avaliação jurídica dos projetos publicitários, a análise regulatória, contratos de patrocínios, e defesa dos interesses junto ao Conselho Nacionaal de Autorregulamentação Publicitária (CONAR)."
                 }
             },
             {
                 "title": "Contencioso, Arbitragem e Solução de Disputas",
+                "imageSrc": "/modals/contencioso.png",
                 "content": {
                     "copy": "Oferecemos consultoria e representação a nossos clientes em questões preventivas e contenciosas, abrangendo diversas formas de disputas empresariais. Nosso compromisso é buscar soluções que melhor atendam aos interesses de nossos clientes, desde as etapas iniciais de discussões, quando o conflito ainda pode ser evitado ou mitigado, até a gestão estratégica de disputas junto ao Poder Judiciário, tribunais arbitrais, autoridades administrativas e agências reguladoras.\n\nAdotamos uma abordagem proativa, orientada pela prevenção de conflitos e pela minimização de seus impactos, sempre trabalhando em parceria com o cliente. Nossa proposta de valor é resolver os problemas apresentados e estruturar uma gestão eficiente das questões envolvidas, garantindo soluções alinhadas às necessidades e expectativas de nossos clientes."
                 }
             },
             {
                 "title": "Contratos e negociações",
+                "imageSrc": "/modals/contratos.png",
                 "content": {
                     "copy": "Alinhados à expertise nas demais práticas do Escritório e com conhecimento técnico e negocial acumulado, assessoramos nossos clientes na elaboração, estruturação, revisão e negociação de contratos de diferentes complexidades e temas.\n\nFocados nas diferentes indústrias e práticas, procuramos contribuir com instrumentos e documentos específicos, claros, equilibrados e razoáveis, de modo a prevenir riscos e conflitos, bem como cooperar com relações sólidas, seguras e de boa duração.\n\nEm abordagem multidisciplinar, inclusive com o envolvimento das demais áreas do cliente (operacional, comercial, técnica etc.), procuramos nos envolver na concepção do negócio, na seleção e avaliação do parceiro, na negociação dos termos, no monitoramento da relação e até seu encerramento em bons termos para o cliente."
                 }
             },
             {
                 "title": "Direito Econômico",
+                "imageSrc": "/modals/economico.png",
                 "content": {
                     "copy": "Atuamos em casos de Direito Econômico, assessorando indivíduos, empresas nacionais e internacionais, associações e órgãos de classe em questões como concentrações empresariais, práticas anticoncorrenciais, auditorias e compliance em diversos setores Oferecemos consultoria preventiva, auditorias, pareceres, preparo e acompanhamento de atos de concentração e representações administrativas e judicial."
                 }
             },
             {
                 "title": "Inteligência Artificial",
+                "imageSrc": "/modals/IA.png",
                 "content": {
                     "copy": "Assessoramos nossos clientes em relação à utilização e/ou desenvolvimento de Sistemas de Inteligência Artificial, de modo a atender às normas jurídicas e boas práticas de mercado e ética aplicáveis.\n\nNossos principais produtos e serviços incluem: (i) condução de Avaliação de Impacto Algorítmico (AIA) e outras avaliações de risco; (ii) elaboração e revisão de Políticas e Frameworks de Governança, incluindo a abordagem regulatória e ética; (iii) elaboração e revisão de Políticas de Uso de IA por colaboradores; (iv) criação de materiais educativos e de conscientização direcionados a empregados, prestadores de serviço e outros colaboradores, e realização de treinamentos personalizados; (v) elaboração, estruturação, revisão e negociação de contratos e termos de diferentes complexidades em relação ao tema; e (vi) suporte na gestão adequada de terceiros."
                 }
             },
             {
                 "title": "Legal Operations",
+                "imageSrc": "/modals/legal_operations.png",
                 "content": {
                     "copy": "Com foco na eficiência do negócio, assessoramos os clientes na estruturação e readequação de áreas e atividades focadas em Legal Operations, priorizando o melhor aproveitamento do tempo, a boa gestão de projetos, o aprimoramento das entregas, e a eficiência, escalabilidade e bom uso das tecnologias disponíveis, a partir de metodologias reconhecidas de mercado como CLOC, ACC e outras."
                 }
             },
             {
                 "title": "Life Sciences e Saúde",
+                "imageSrc": "/modals/life_sciences.png",
                 "content": {
                     "copy": "Fornecemos serviços focados nos setores de Life Sciences e Saúde nas frentes regulatória, contratual e contenciosa. Entre nossos principais produtos e serviços estão:",
                     "topics": [
@@ -122,6 +131,7 @@
             },
             {
                 "title": "Proteção de Dados Pessoais e Cybersecurity",
+                "imageSrc": "/modals/dados.png",
                 "content": {
                     "copy": "Assessoramos nossos clientes na adequação às normas legais que regulam Privacidade e Proteção de Dados Pessoais, incluindo a Lei Geral de Proteção de Dados Pessoais (LGPD), as regulações e diretrizes da Autoridade Nacional de Proteção de Dados (ANPD) e também regulações setoriais aplicáveis a ramos específicos de mercado. Nossos principais produtos e serviços incluem:",
                     "topics": [
@@ -210,6 +220,7 @@
             },
             {
                 "title": "Propriedade Intelectual",
+                "imageSrc": "/modals/propriedade_intelectual.png",
                 "content": {
                     "copy": "Prestamos toda assessoria aos clientes em relação a projetos e operações que envolvam marcas, patentes, direitos autorais, software, know-how e outros tipos de propriedade intelectual. Nossos principais produtos e serviços incluem",
                     "topics": [
@@ -238,12 +249,14 @@
             },
             {
                 "title": "Startups",
+                "imageSrc": "/modals/startup.png",
                 "content": {
                     "copy": "Com atuação de mais de uma década com clientes deste perfil, trabalhamos para refletir as necessidades e modo único de fazer das startups. Procuramos atender os clientes de acordo com cada fase de seu desenvolvimento, com serviços e honorários condizentes, como parceiros dos negócios nascentes e da inovação."
                 }
             },
             {
                 "title": "Tributário",
+                "imageSrc": "/modals/tributario.png",
                 "content": {
                     "copy": "Prestamos assessoria jurídica especializada em tributos diretos e indiretos, oferecendo uma abordagem inovadora, atualizada, customizada e detalhada para atender às demandas dos clientes. Atuamos desde o exame fiscal de transações e projetos corporativos, o planejamento tributário e a atuação contenciosa administrativa e judicial.\n\nAcompanhamos de perto as mudanças no sistema tributário brasileiro e as evoluções jurisprudenciais, atuando em todo o território nacional para oferecer uma defesa estratégica e ética em litígios judiciais e administrativos. Nossos principais produtos e serviços incluem:",
                     "topics": [
@@ -278,7 +291,7 @@
         "profile": {
             "name": "Marurício Tamer",
             "role": "Sócio",
-            "picture": "/placeholderPic.png",
+            "picture": "/MauricioTamer.webp",
             "linkedin": "https://www.linkedin.com/in/mauríciotamer/",
             "lattes": "https://lattes.cnpq.br/1292641448156094",
             "bio": "Com 15 anos de experiência nos setores privado, público e na academia, Maurício Tamer procura prestar a melhor assessoria preventiva a clientes em assuntos relacionados a conformidade jurídica, mitigação de riscos e contratos para proteção e escalabilidade ao negócio. Acredita que o resultado eficiente é a melhor conquista.\n\n Com foco nas diversas práticas do Escritório, auxilia os clientes na estruturação e implementação de negócios e a elaboração e revisão dos documentos pertinentes como regulamentos, políticas, avaliações de risco e contratos, treinamentos e estratégias de conscientização e governança corporativa. \n\nAtua também na defesa administrativa e judicial dos interesses dos clientes, sempre prezando por uma abordagem técnica, tática e estratégica.",

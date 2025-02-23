@@ -25,8 +25,7 @@ export default function TextGrid(content) {
                 </div>
                 {data.type === 'article' ?
                     (<div className={`col-lg-8 col-md-8 col-sm-4 ${styles.contentWrapper}`}>
-                        <div className={`col-lg-3 col-md-8 col-sm-4 ${styles.quote}`}> {data.quote} </div>
-                        <div className="col-lg-1" />
+                        <div className={`col-lg-4 col-md-8 col-sm-4 ${styles.quote}`}> {data.quote} </div>
                         <div className={`col-lg-4 col-md-8 col-sm-4 ${styles.textContent}`}>
                             {data.content.split("\n").map((line, i) => (
                                 <p key={i} className={styles.copy}>{line}</p>
@@ -38,7 +37,7 @@ export default function TextGrid(content) {
                     </div>)
                     : data.type === 'profile' ?
                         (<div className={`col-lg-8 col-md-3 col-sm-4 ${styles.profileWrapper}`}>
-                            <div className={`col-lg-6 col-md-6 col-sm-4 ${styles.profileContent}`}>
+                            <div className={`col-lg-4 col-md-6 col-sm-4 ${styles.profileContent}`}>
                                 <p className={`row ${styles.profileData}`}>
                                     <b>{data.profile.name}</b>
                                     <span>
@@ -59,11 +58,8 @@ export default function TextGrid(content) {
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-lg-1" />
-                            <div className={`col-lg-6 col-md-6 col-sm-4 ${styles.profilePic}`}>
-                                <img src={`${data.profile.picture}`} />
-                                {/* <img src={`/mtamer-site-ui${data.profile.picture}`} /> */}
-                            </div>
+                            <img className={`col-lg-4 col-md-6 col-sm-4 ${styles.profilePic}`} src={`${data.profile.picture}`} />
+                            {/* <img src={`/mtamer-site-ui${data.profile.picture}`} /> */}
                         </div>)
                         : null}
 
