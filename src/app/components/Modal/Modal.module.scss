@@ -31,6 +31,7 @@
     }
 
     &Wrapper {
+        overflow-y: scroll;
         font-family: "Space Grotesk", serif;
         background-color: #E2D6C5;
         min-width: 100vw;
@@ -92,9 +93,9 @@
 
             @media(min-width: 621px){
                 img {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
+                    margin-top: -1rem;
+                    height: 100%;
+                    width: 100%;
                 }
             }
 
@@ -130,6 +131,13 @@
                 padding-top: 2%;
                 font-size: 1.2rem;
                 font-weight: 500;
+            }
+            @media(min-width: 621px){
+                img {
+                    margin-top: -1rem;
+                    max-height: min-content;
+                    min-width: 100%;
+                }
             }
         }
 

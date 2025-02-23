@@ -2,7 +2,7 @@ import styles from "./Footer.module.scss";
 
 export default function Footer() {
     return (
-        <div className={`col-lg-12 ${styles.footer}`}>
+        <footer className={`col-lg-12 ${styles.footer}`}>
             <div className="col-lg-2"></div>
             <div className={`col-lg-4 ${styles.logos}`}>
                 {/* <img src="/mtamer-site-ui/vector.png" className={styles.mainLogo}/> */}
@@ -13,6 +13,6 @@ export default function Footer() {
             <div className={`col-lg-6 ${styles.content}`}>
                 
             </div>
-        </div>
+        </footer>
     )
 }

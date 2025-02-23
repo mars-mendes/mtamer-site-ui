@@ -68,7 +68,7 @@ export default function Header() {
 
     return (
         <>
-            <div className={`container ${styles.header}`} style={{ backgroundColor: bgColor }}>
+            <header className={`container ${styles.header}`} style={{backgroundColor: bgColor, minWidth: '100vw'}} >
                 <div className="row">
 
                     {scrolled || isOpen ?
@@ -125,15 +125,18 @@ export default function Header() {
                     {!isOpen ? (
                         <div className={`row ${styles.banner}`} ref={bannerRef}>
                             <div className="col-lg-12 col-md-6 col-sm-4">
-                                <img src="/logo-mask.svg" />
+                                {/* <img src="/cards-desktop.jpg" /> */}
+                                <img src="/cards-bg.jpg" />
                                 {/* <img src="/mtamer-site-ui/logo-mask.png" /> */}
+                            </div>
+                            <div className={`col-lg-12 col-md-6 col-sm-4 ${styles.bannerOverlay}`}>
                             </div>
                         </div>
                     ) : null
                     }
                 </div>
                 {/* try to emcompass the image wihtin the header so it accompanies the height and positioning  */}
-            </div>
+            </header>
         </>
     )
 }
