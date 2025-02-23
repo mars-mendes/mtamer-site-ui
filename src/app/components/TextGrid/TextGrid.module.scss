@@ -4,7 +4,7 @@
     font-style: normal;
 
     &:first-of-type {
-        margin-top: 5rem;
+        margin-top: 1.5rem;
     }
 
     @media(max-width: 1100px) {
@@ -17,7 +17,6 @@
         gap: 2rem;
         padding: 1rem;
         border-top: solid 1px black;
-        margin-right: 2rem;
         font-size: 16px;
         font-weight: 500;
 
@@ -52,44 +51,44 @@
     .content {
         &Wrapper {
             margin-left: 2rem;
-            gap: 2rem;
             display: flex;
             flex-direction: row;
-            border-top: solid 1px black;
-
+            
             @media(max-width: 1460px) {
                 display: flex;
                 flex-direction: column;
-
+                
             }
-
+            
             @media(max-width: 1100px) {
                 margin-left: -2%;
                 flex-direction: row !important;
                 border-top: none;
                 gap: 0.05rem;
             }
-
+            
             @media(max-width: 620px) {
                 flex-direction: column !important;
             }
-
+            
             .quote {
                 margin-left: -1.1%;
                 font-size: 1.5rem;
                 line-height: 2rem;
                 padding: 1rem 0;
-                padding-right: 1.5rem;
                 font-weight: 200;
-
+                border-top: solid 1px black;
+                
                 @media(max-width: 1100px) {
                     border-top: solid 1px black;
                 }
             }
-
+            
             .textContent {
+                border-top: solid 1px black;
                 display: block;
-                padding: 1rem;
+                padding: 1rem 0;
+                padding-left: 2rem;
                 font-size: 1rem;
                 line-height: 1.375rem;
 
@@ -117,7 +116,7 @@
     .profile {
         &Wrapper {
             margin-left: 2rem;
-            gap: 2rem;
+            gap: 1rem;
             display: flex;
             flex-direction: row;
             position: relative;
@@ -165,8 +164,9 @@
 
         &Pic {
             position: relative;
-            left: -10%;
+            left: 0;
             bottom: 0;
+            max-width: 100%;
         }
     }
 }

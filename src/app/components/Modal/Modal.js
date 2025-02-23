@@ -85,12 +85,12 @@ export default function Modal(content) {
                                 </div>
                             ) : <div className="col-lg-2"></div>}
                             <div className={`col-lg-10 col-md-8 col-sm-4 ${styles.contentWrapper}`}>
-                                <div className={`col-lg-7 col-md-8 col-sm-4 ${styles.textWrapper}`}>
+                                <div className={`col-lg-6 col-md-8 col-sm-4 ${styles.textWrapper}`}>
                                     <p className={styles.modalTitle}>
                                         {selectedCard.content.fullTitle ? selectedCard.content.fullTitle : selectedCard.title}
                                     </p>
                                     <div className={styles.imgMobile}>
-                                        <img src="/placeholderPic.png" />
+                                        <img src={selectedCard.imageSrc} />
                                         {/* <img src="/mtamer-site-ui/placeholderPic.png" /> */}
                                     </div>
                                     {copy.split("\n").map((line, i) => (
@@ -113,10 +113,9 @@ export default function Modal(content) {
                                     ) : ""
                                     }
                                 </div>
-                                <div className={`col-lg-3  ${styles.imgDesktop}`}>
-                                    <img src="/placeholderPic.png" />
-                                    {/* <img src="/mtamer-site-ui/placeholderPic.png" /> */}
-                                </div>
+                                <div className={`col-lg-1`}></div>
+                                <img className={`col-lg-4  ${styles.imgDesktop}`} src={selectedCard.imageSrc} />
+                                {/* <img src="/mtamer-site-ui/placeholderPic.png" /> */}
                             </div>
                         </>
                     ) : modalType === "profile" ? (
@@ -153,8 +152,9 @@ export default function Modal(content) {
 
                                     </div>
                                 </div>
-                                <div className={`col-lg-3 ${styles.imgDesktop}`}>
-                                    <img src="/placeholderPic.png" />
+                                <div className={`col-lg-1`}></div>
+                                <div className={`col-lg-4 ${styles.imgDesktop}`}>
+                                    <img src={data.profile.picture} />
                                     {/* <img src="/mtamer-site-ui/placeholderPic.png" /> */}
                                 </div>
                             </div>

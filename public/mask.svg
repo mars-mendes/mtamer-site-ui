@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -100 1648 654">
+  <!-- Define the mask -->
+  <mask id="logo-mask">
+    <!-- Full-size white rectangle (visible area) -->
+    <rect x="-200" y="-100" width="1648" height="654" fill="white" />
+    <!-- Logo as a black cutout (transparent area) -->
+    <path d="M0 0V454H113.459V113.505H226.918V454.01H340.377V113.505H453.836V454.01H567.295V113.505H680.754V454.01H794.213V113.505H907.672V454.01H1021.13V340.505H1134.59V454.01H1248.05V0H0ZM1134.55 227H1021.09V113.495H1134.55V227Z" fill="black" />
+  </mask>
+  <!-- Apply the mask to a full-size rectangle -->
+   <rect x="-200" y="-100" width="1648" height="654" mask="url(#logo-mask)" fill="#E2D6C5" />
+</svg>
