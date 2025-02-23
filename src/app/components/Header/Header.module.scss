@@ -10,7 +10,7 @@
     &Links {
         &Desktop {
             position: absolute;
-            right: -4.4vw;
+            right: 0;
             padding: 0.2rem;
 
             .links {
@@ -104,7 +104,7 @@
         background-color: #E2D6C5;
         position: relative;
         top: 0;
-        left: 2rem;
+        left: 1rem;
         padding: 32px;
         mask-repeat: no-repeat;
         mask-position: center;
@@ -149,15 +149,6 @@
             min-width: 100vw;
             min-height: 100%;
             object-fit: fill;
-
-            // @media(max-width: 1460px) {
-            //     top: 20%;
-            //     max-width: 60cqw;
-            // }
-
-            // mask-image: url('/mtamer-site-ui/logo-mask.png');
-            // -webkit-mask-image: url('/mtamer-site-ui/logo-mask.png');
-
         }
     }
 }
