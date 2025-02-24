@@ -22,7 +22,7 @@ export default function CardGroup(content) {
       if (width >= 1200) setColumns(4); // lg (large devices)
       else if (width >= 992) setColumns(2); // md (medium devices)
       else if (width <= 768) setColumns(2); // sm (small devices)
-      else setColumns(1); // xs (extra small devices)
+      else if (width <= 520) setColumns(4); // xsm (extra small devices)
     };
 
     updateColumns();

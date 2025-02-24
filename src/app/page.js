@@ -38,6 +38,9 @@ export default function Home() {
             <div className="row justify-content-center">
               <TextGrid content={data.quemSomos} />
             </div>
+            <div className="row justify-content-center">
+              <TextGrid content={data.quemSomos2} />
+            </div>
             <a id="praticas" className={styles.anchor}></a>
             <div className="row justify-content-center">
               <CardGroup content={data.praticas} />

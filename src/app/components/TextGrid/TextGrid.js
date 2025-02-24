@@ -35,6 +35,18 @@ export default function TextGrid(content) {
                             <ReadMore className={styles.copy} text={data.content} />
                         </div>
                     </div>)
+                    :data.type === 'article2' ?
+                    (<div className={`col-lg-8 col-md-8 col-sm-4 ${styles.contentWrapper}`}>
+                        <div className={`col-lg-6 col-md-8 col-sm-4 ${styles.quote}`}> {data.quote} </div>
+                        <div className={`col-lg-6 col-md-8 col-sm-4 ${styles.textContent}`}>
+                            {data.content.split("\n").map((line, i) => (
+                                <p key={i} className={styles.copy}>{line}</p>
+                            ))}
+                        </div>
+                        <div className={`col-lg-6 col-md-8 col-sm-4 ${styles.textReadMore}`}>
+                            <ReadMore className={styles.copy} text={data.content} />
+                        </div>
+                    </div>)
                     : data.type === 'profile' ?
                         (<div className={`col-lg-8 col-md-3 col-sm-4 ${styles.profileWrapper}`}>
                             <div className={`col-lg-4 col-md-6 col-sm-4 ${styles.profileContent}`}>
