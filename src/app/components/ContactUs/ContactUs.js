@@ -7,7 +7,7 @@ export default function ContactUs(content) {
             <div className={`col-lg-12 col-md-8 col-sm-4 ${styles.contactUs}`}>
                 <div className={`col-lg-2 col-md-8 col-sm-4 ${styles.title}`}> {data.title} </div>
                 <div className={`col-lg-8 col-md-8 col-sm-4 ${styles.contactUsWrapper}`}>
-                    <div className={`col-lg-4 col-md-8 col-sm-4 ${styles.contactUsContent}`}>
+                    <div className={`col-lg-6 col-md-8 col-sm-4 ${styles.contactUsContent}`}>
                         <div className={`row ${styles.contactUsLinks}`}>
                             <p>{data.end}</p>
                             <a className={styles.link} target="_blank" href={data.telefone}>
