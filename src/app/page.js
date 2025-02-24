@@ -38,9 +38,6 @@ export default function Home() {
             <div className="row justify-content-center">
               <TextGrid content={data.quemSomos} />
             </div>
-            <div className="row justify-content-center">
-              <TextGrid content={data.quemSomos2} />
-            </div>
             <a id="praticas" className={styles.anchor}></a>
             <div className="row justify-content-center">
               <CardGroup content={data.praticas} />
@@ -52,6 +49,9 @@ export default function Home() {
             <a id="responsabilidade" className={styles.anchor}></a>
             <div className="row justify-content-center" >
               <TextGrid content={data.respSocialCorp} />
+            </div>
+            <div className="row justify-content-center" >
+              <img className="col-lg-12 col-md-8 col-sm-4" src="/image-band.jpg"/>
             </div>
             <a id="contato" className={styles.anchor}></a>
             <div className="row justify-content-center" >
