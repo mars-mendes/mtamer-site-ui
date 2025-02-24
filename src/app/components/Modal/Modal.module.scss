@@ -11,9 +11,6 @@
                 max-width: 20px;
                 max-height: 20px;
             }
-            @media(max-width: 620px){
-                margin-left: 85%;
-            }
         }
 
         .homeLink {
@@ -32,9 +29,10 @@
 
     &Wrapper {
         overflow-y: scroll;
+        overflow-x: hidden;
         font-family: "Space Grotesk", serif;
         background-color: #E2D6C5;
-        min-width: 100vw;
+        min-width: 100%;
         min-height: max-content;
         position: relative;
         padding: 1rem;
@@ -71,6 +69,9 @@
             max-height: 100%;
             .imgDesktop {
                 display: block;
+                @media(min-width: 1200px){
+                    max-width: 30vw;
+                }
             }
             .imgMobile {
                 display: none;
@@ -161,7 +162,7 @@
 
             &Actions {
                 position: relative;
-                min-width: 100vw;
+                min-width: 100%;
                 margin-bottom: 7%;
                 top: -1rem;
                 .logoSmall {

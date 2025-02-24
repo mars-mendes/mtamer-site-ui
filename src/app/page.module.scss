@@ -10,6 +10,7 @@
     padding: 2rem;
   }
   &.pageModalWrapper {
+    width: 100%;
     overflow-y: scroll;
     position: absolute;
     top: 3.9%;
@@ -18,7 +19,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 99vw;
+    width: 100%;
     overflow: hidden!important;
   }
 }

@@ -53,7 +53,7 @@ export default function Modal(content) {
                                 Voltar para página inicial
                             </a>
                         </div>
-                        <div className={`col-lg-2 ${styles.close}`} onClick={() => handleReturn()}>
+                        <div className={`col-2 ${styles.close}`} onClick={() => handleReturn()}>
                             <img src="/exit_icon.svg" />
                             {/* <img src="/mtamer-site-ui/exit_icon.svg" /> */}
                         </div>
