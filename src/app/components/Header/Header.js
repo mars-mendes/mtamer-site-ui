@@ -1,36 +1,12 @@
 "use client"
 
-import React, { useState, useRef, useEffect, useContext } from "react"
+import React, { useContext } from "react"
 import styles from "./Header.module.scss";
 import { ModalContext } from "../../page";
 
 
 export default function Header() {
-    const [scrolled, setScrolled] = useState(false);
-    const bannerRef = useRef(null);
-    const { isOpen, setIsOpen, modalType, setModalType } = useContext(ModalContext);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (bannerRef.current) {
-                const bannerBottom = bannerRef.current.offsetTop + bannerRef.current.offsetHeight;
-                const bannerTop = bannerRef.current.offsetTop;
-                const scrollY = window.scrollY;
-        
-                // Check if the banner is visible in the viewport
-                const isBannerVisible = scrollY < bannerBottom && scrollY + window.innerHeight > bannerTop;
-        
-                if (isBannerVisible) {
-                  setScrolled(false); // Force the navbar to "initial" when the banner is visible
-                } else {
-                  setScrolled(scrollY > bannerBottom);
-                }
-              }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    const { isOpen, setIsOpen, modalType, setModalType, scrolled } = useContext(ModalContext);
 
     const labels = [
         {
@@ -68,69 +44,52 @@ export default function Header() {
 
     return (
         <>
-            <header className={`container ${styles.header}`} style={{backgroundColor: bgColor, minWidth: '100vw'}} >
-                <div className="row">
+            <header className={`container-fluid ${styles.header}`} style={{ backgroundColor: bgColor }} >
+                {scrolled || isOpen ?
+                    (
+                        <>
+                            {modalType != 'menu' ? (
 
-                    {scrolled || isOpen ?
-                        (
-                            <>
-                                {modalType != 'menu' ? (
-
-                                    <div className={`row ${styles.navL1}`}>
-                                        <div className={`row ${styles.navWrapper}`}>
-                                            <div className={`col-lg-7 col-md-3 col-sm-3`} onClick={() => setIsOpen(false)} href="/">
-                                                <img src="/vector.svg" className={styles.logoSmall} />
-                                            </div>
-                                            <div className={`col-lg-1 col-md-1 col-sm-1 ${styles.headerLinksMobile}`} onClick={() => handleMenu()}>
-                                                <img src="/menu.svg" />
-                                                {/* <img src="/mtamer-site-ui/menu.svg"/> */}
-                                            </div>
-                                            <div className={`col-lg-5 col-sm-0 ${styles.headerLinksDesktop}`}>
-                                                {labels.map((item, i) => {
-                                                    return (
-                                                        <a key={i} href={item.url} className={`col-2 ${styles.links}`} onClick={() => setIsOpen(false)}>{item.label}</a>
-                                                    )
-                                                })}
-                                            </div>
+                                <div className={`row ${styles.navL1}`}>
+                                    <div className={`${styles.navWrapper}`}>
+                                        <div className={`col-lg-7 col-md-3 col-sm-3`} onClick={() => setIsOpen(false)} href="/">
+                                            <img src="/vector.svg" className={styles.logoSmall} />
                                         </div>
-                                    </div>
-                                ) : null}
-                            </>
-                        ) : (
-                            <>
-                                <div className={`row ${styles.navB}`}>
-                                    <div className={`row ${styles.navWrapper}`}>
-                                        <div className={`col-lg-7 col-md-6 col-sm-3`}>
-                                            <img src="/logo-full.svg" className={styles.logoFull} />
+                                        <div className={`col-lg-1 col-md-1 col-sm-1 ${styles.headerLinksMobile}`} onClick={() => handleMenu()}>
+                                            <img src="/menu.svg" />
                                         </div>
-                                        <div className={`col-lg-5 ${styles.headerLinksDesktop}`}>
+                                        <div className={`col-lg-5 col-sm-0 ${styles.headerLinksDesktopL1}`}>
                                             {labels.map((item, i) => {
                                                 return (
-                                                    <a key={i} href={item.url} onClick={() => setIsOpen(false)} className={`col-2 ${styles.links}`}>{item.label}</a>
+                                                    <a key={i} href={item.url} className={`col-2 ${styles.links}`} onClick={() => setIsOpen(false)}>{item.label}</a>
                                                 )
                                             })}
                                         </div>
-                                        <div className={`col-md-2 col-sm-1 ${styles.headerLinksMobile}`} onClick={() => handleMenu()}>
-                                            <img src="/menu.svg" />
-                                        </div>
                                     </div>
                                 </div>
-                            </>
-                        )}
-                </div>
-                <div className="row">
-                    {!isOpen ? (
-                        <div className={`row ${styles.banner}`} ref={bannerRef}>
-                            <div className="col-lg-12 col-md-6 col-sm-4">
-                                <img src="/cards-bg.jpg" />
+                            ) : null}
+                        </>
+                    ) : (
+                        <>
+                            <div className={`row ${styles.navB}`}>
+                                <div className={`row ${styles.navWrapper}`}>
+                                    <div className={`col-lg-7 col-md-6 col-sm-3`}>
+                                        <img src="/logo-full.svg" className={styles.logoFull} />
+                                    </div>
+                                    <div className={`col-lg-5 ${styles.headerLinksDesktop}`}>
+                                        {labels.map((item, i) => {
+                                            return (
+                                                <a key={i} href={item.url} onClick={() => setIsOpen(false)} className={`col-2 ${styles.links}`}>{item.label}</a>
+                                            )
+                                        })}
+                                    </div>
+                                    <div className={`col-md-2 col-sm-1 ${styles.headerLinksMobile}`} onClick={() => handleMenu()}>
+                                        <img src="/menu.svg" />
+                                    </div>
+                                </div>
                             </div>
-                            <div className={`col-lg-12 col-md-6 col-sm-4`}>
-                            <img src="/mask.png" alt="Mask" className={styles.bannerMask} />
-                            </div>
-                        </div>
-                    ) : null
-                    }
-                </div>
+                        </>
+                    )}
             </header>
         </>
     )

@@ -89,9 +89,7 @@
     &:not(.placeholderCard) {
       cursor: pointer; // Only actual cards have pointer cursor
       &:hover {
-        border: 1px solid black !important;
         color: black;
-        // background-color: rgba(226, 214, 197, 0.5); // Semi-transparent hover effect
         background-color: #E2D6C5;
       }
     }

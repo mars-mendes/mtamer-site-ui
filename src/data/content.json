@@ -325,5 +325,30 @@
         "end": "Brigadeiro Faria Lima, 3144, Cj. 31\nJardim Paulistano, São Paulo/SP\nCEP 01451-000",
         "telefone": "(11) 96835-4595",
         "email": "mtamer@mtamer.com.br"
+    },
+    "premios": {
+        "title": "Reconhecimentos",
+        "cards": [
+            {
+                "title": "Chambers Partners Brazil ",
+                "description": "Proteção de Dados (2023-2024)",
+                "img": "/Chambers-Brazil-2024-Leading-Firm.svg"
+            },
+            {
+                "title": "The Legal 500",
+                "description": "TMT: Tech, Innovation and Digital Business e TMT: Cybersecurity and Data Privacy (2024-2025)",
+                "img": "/Legal-500.svg"
+            },
+            {
+                "title": "Best Lawyers",
+                "description": "One to Watch Brazil em Intellectual Property Law, Litigation e Privacy and Data Security (2024-2025)",
+                "img": "/Best-Lawyers-Ones-To-Watch.svg"
+            },
+            {
+                "title": "Análise Advocacia ",
+                "description": "Digital (2020-2025); Tecnologia (2022); Compliance, Agricultura e Pecuária, Siderurgia e Mineração (2023/2024) e Seguros (2025)",
+                "img": "/fb-advocacia-700x758.svg"
+            }
+        ]
     }
 }
