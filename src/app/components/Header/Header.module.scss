@@ -9,9 +9,26 @@
 
     &Links {
         &Desktop {
+            display: block;
             position: absolute;
             right: 0;
             padding: 0.2rem;
+
+            &L1 {
+                display: block;
+                position: absolute;
+                right: 0;
+                .links {
+                    padding-right: 2rem;
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1rem;
+    
+                    &:last-of-type {
+                        padding-right: 0;
+                    }
+                }
+            }
 
             .links {
                 padding-right: 2rem;
@@ -28,7 +45,6 @@
                 right: 4%;
             }
 
-            display: block;
 
             @media(max-width: 1365px) {
                 display: none;
@@ -50,21 +66,20 @@
 
                 }
             }
-            @media(max-width: 520px){
+
+            @media(max-width: 520px) {
                 img {
                     right: 2.5rem;
                 }
-            }    
+            }
         }
     }
 
     .navL1 {
-        position: fixed;
-        top: 0;
-        left: 0;
+        position: relative;
         background-color: #D9D9D9;
         color: white;
-        padding: 32px;
+        padding: 2rem;
         height: 2rem;
         min-width: 102vw;
         z-index: 10;
@@ -77,18 +92,19 @@
 
         .navWrapper {
             position: absolute;
-            top: 25%;
+            bottom: 1rem;
+            display: flex;
+            flex-direction: row;
         }
-        @media(max-width: 520px){
+
+        @media(max-width: 520px) {
             min-width: 105vw;
         }
 
     }
 
     .navB {
-        position: fixed;
-        top: 0;
-        left: 0;
+        position: relative;
         padding: 2rem;
         height: 100px;
         min-width: 102vw;
@@ -113,123 +129,10 @@
             position: relative;
             max-height: 72px;
         }
-        @media(max-width: 520px){
+
+        @media(max-width: 520px) {
             min-width: 105vw;
         }
 
-    }
-
-    .banner {
-        background-color: #E2D6C5;
-        position: relative;
-        top: 0;
-        left: 1rem;
-        padding: 32px;
-        mask-repeat: no-repeat;
-        mask-position: center;
-        min-height: 93cqh;
-        min-width: 100vw;
-        margin: 0 auto;
-        margin-bottom: 0;
-        align-self: center;
-        overflow: hidden;
-
-        @media(max-width: 1460px) {
-            left: 1.5rem;
-        }
-
-        @media(max-width: 1360px) {
-            left: 1.5rem;
-        }
-
-        @media(max-width: 920px) {
-            min-height: 73cqh;
-        }
-        @media(max-width: 730px) {
-            min-height: 53cqh;
-        }
-
-        &Overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin-top: 2%;
-            margin: 0 auto;
-            min-width: 102%;
-            min-height: 110%;
-            background-color: #E2D6C5;
-            mask-image: url('/mask.png');
-            -webkit-mask-image: url('/mask.png');
-            mask-repeat: no-repeat;
-            mask-position: center top;
-            mask-size: 120%;
-            /* Initial size */
-            mask-composite: exclude;
-            /* Inverts the mask */
-            -webkit-mask-composite: xor;
-            /* For WebKit browsers */
-
-            @media (max-width: 1460px) {
-                mask-size: 120%
-                    /* Adjust for smaller screens */
-            }
-
-            @media (max-width: 1100px) {
-                mask-size: 80vw;
-                /* Adjust for even smaller screens */
-            }
-
-            @media (max-width: 768px) {
-                mask-size: 60vw;
-                /* Adjust for mobile screens */
-            }
-        }
-
-        &Mask {
-            position: absolute;
-            left: -16%;
-            width: 130%;
-            height: 110%;
-            object-fit: cover;
-            /* Ensure the SVG covers the entire banner */
-            pointer-events: none;
-
-            /* Ensure the SVG doesn’t block clicks */
-            @media(max-width: 1360px) {
-                left: -13%;
-            }
-            @media(max-width: 730px) {
-                left: -10%;
-                width: 125%;
-                height: 100%;
-            }
-            @media(max-width: 575px) {
-                left: -7%;
-                height: 100%;
-                width: 120%;
-            }
-            @media(max-width: 475px) {
-                left: -5%;
-            }
-
-        }
-
-        img {
-            position: absolute;
-            top: 2%;
-            margin: 0 auto;
-            min-width: 100vw;
-            min-height: 90%;
-            object-fit: fill;
-            @media(max-width: 730px) {
-                top: 5%;
-            }
-            @media(max-width: 575px) {
-                top: 10%;
-            }
-            @media(max-width: 475px) {
-                height: 90%;
-            }
-        }
     }
 }
