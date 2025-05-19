@@ -17,7 +17,7 @@
             margin: 1% 0;
 
             &::before {
-                content: "\2190";
+                content: "←";
                 padding-right: 0.5%;
             }
             display: block;
@@ -31,7 +31,7 @@
         overflow-y: scroll;
         overflow-x: hidden;
         font-family: "Space Grotesk", serif;
-        background-color: #E2D6C5;
+        background-color: #E6DCCC;
         min-width: 100%;
         min-height: max-content;
         position: relative;
@@ -69,6 +69,8 @@
             max-height: 100%;
             .imgDesktop {
                 display: block;
+                max-height: 25rem;
+                max-width: 100%;
                 @media(min-width: 1200px){
                     max-width: 30vw;
                 }

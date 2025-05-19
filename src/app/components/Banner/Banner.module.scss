@@ -1,8 +1,5 @@
 .banner {
-    &Wrapper {
-        min-width: 100vw;
-    }
-    background-color: #E2D6C5;
+    background-color: #E6DCCC;
     position: relative;
     top: -1rem;
     left: -0.5rem;
@@ -15,6 +12,9 @@
     align-self: center;
     overflow: hidden;
     overflow-x: hidden!important;
+    &Wrapper {
+        min-width: 100vw;
+    }
     video {
         width: 100%;
     }

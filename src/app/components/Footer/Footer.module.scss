@@ -1,25 +1,54 @@
 .footer {
-    position: absolute;
-    background-color: #E2D6C5;
+    position: relative;
+    background-color: #E6DCCC;
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    padding-bottom: 5rem;
     min-width: 100vw;
-    left: 0.25rem;
-    bottom: 0;
-    // min-height: 100%;
+    font-family: "Space Grotesk", serif;
+    gap: 2rem;
+
     .logos {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+
         .mainLogo {
             fill: black;
-            width: 181px;
-            height: 66.15px;
+            max-height: 44px;
+            align-items: flex-start;
+            margin-top: 1rem;
+            margin-bottom: 6rem;
         }
-        .smallLogo {
-            width: 96px;
-            height: 53px;
+    }
+
+    .content {
+        white-space: pre-wrap;
+
+        .contactUs {
+            &Content {
+                padding-right: 2rem;
+            }
+
+            &Links {
+                margin: 0 2rem;
+                font-size: 1rem;
+                margin-left: 1.2rem;
+
+                .link {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                hr {
+                    margin-left: 0.7rem;
+                    width: 25%;
+                    background-color: black!important;
+                    border-color: black!important;
+                    opacity: 1;
+                }
+
+            }
         }
     }
 }

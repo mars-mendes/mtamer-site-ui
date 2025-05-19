@@ -1,4 +1,4 @@
-import { ModalContext } from "@/app/page";
+import { ModalContext } from "@/app/page.js";
 import React, { useContext, useEffect, useRef } from "react";
 import styles from "./Banner.module.scss";
 

@@ -1,15 +1,14 @@
 "use client"
 import { createContext, useEffect, useRef, useState } from "react";
-import CardGroup from "./components/CardGroup/CardGroup";
-import Header from "./components/Header/Header";
-import TextGrid from "./components/TextGrid/TextGrid";
+import CardGroup from "./components/CardGroup/CardGroup.js";
+import Header from "./components/Header/Header.js";
+import TextGrid from "./components/TextGrid/TextGrid.js";
 import data from "../data/content.json"
 import styles from "./page.module.scss";
-import Modal from "./components/Modal/Modal";
-import Footer from "./components/Footer/Footer";
-import ContactUs from "./components/ContactUs/ContactUs";
-import Banner from "./components/Banner/Banner";
-import Awards from "./components/Awards/Awards";
+import Modal from "./components/Modal/Modal.js";
+import Footer from "./components/Footer/Footer.js";
+import Banner from "./components/Banner/Banner.js";
+import Awards from "./components/Awards/Awards.js";
 
 export const ModalContext = createContext({
   isOpen: false,
@@ -63,12 +62,12 @@ export default function Home() {
                 <Awards content={data.premios} />
               </div>
             </div>
-            {/* <div className={`row justify-content-center ${styles.contentRow}`}>
-              <Footer />
-            </div> */}
+            <div className={`row justify-content-center ${styles.contentRow}`}>
+              <Footer content={data.contato} />
+            </div>
           </div>
         ) : (
-          <div className={`row ${styles.pageWrapper} ${modalClass}`} style={{ backgroundColor: "#E2D6C5", overflowX: "hidden!important" }}>
+          <div className={`row ${styles.pageWrapper} ${modalClass}`} style={{ backgroundColor: "#E6DCCC", overflowX: "hidden!important" }}>
             <Modal content={modalData} />
           </div>
         )
