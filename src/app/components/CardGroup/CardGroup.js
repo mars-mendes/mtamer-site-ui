@@ -2,7 +2,7 @@
 
 import styles from "./CardGroup.module.scss";
 import { useEffect, useRef, useState, useContext } from "react";
-import { ModalContext } from "../../page";
+import { ModalContext } from "../../page.js";
 
 export default function CardGroup(content) {
   const data = content?.content;
@@ -44,7 +44,6 @@ export default function CardGroup(content) {
     setIsOpen(true);
     setSelectedCard(item);
     setModalType("praticas");
-    window.scrollTo(0, 0);
   };
 
   // Add empty placeholder cards to the last row
@@ -93,6 +92,7 @@ export default function CardGroup(content) {
               >
                 {/* Card content */}
                 <div className={styles.cardContent}>{item.title}</div>
+                <span className={styles.arrow}>→</span>
               </div>
             );
           })}

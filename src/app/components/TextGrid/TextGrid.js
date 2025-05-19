@@ -1,6 +1,6 @@
 import styles from "./TextGrid.module.scss";
 import { useContext } from "react";
-import { ModalContext } from "../../page";
+import { ModalContext } from "../../page.js";
 import ReadMore from "../ReadMore/ReadMore";
 
 export default function TextGrid(content) {
@@ -11,7 +11,6 @@ export default function TextGrid(content) {
     const handleProfile = () => {
         setIsOpen(true);
         setModalType("profile")
-        window.scrollTo(0, 0);
     }
 
     return (

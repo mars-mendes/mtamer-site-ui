@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ModalContext } from "../../page";
+import { ModalContext } from "../../page.js";
 import styles from "./Modal.module.scss";
 
 
@@ -13,7 +13,6 @@ export default function Modal(content) {
     const rec = data.profile?.recognition;
     const handleReturn = () => {
         setIsOpen(false);
-        window.scrollTo(0, 0);
     }
 
     const labels = [
@@ -53,7 +52,7 @@ export default function Modal(content) {
                                 Voltar para página inicial
                             </a>
                         </div>
-                        <div className={`col-2 ${styles.close}`} onClick={() => handleReturn()}>
+                        <div className={`col-2 ${styles.close}`} onClick={() => handleReturn()} href={modalType === "praticas" ? "#praticas" : modalType === "profile" ? "#equipe" : "/"}>
                             <img src="/exit_icon.svg" />
                             {/* <img src="/mtamer-site-ui/exit_icon.svg" /> */}
                         </div>

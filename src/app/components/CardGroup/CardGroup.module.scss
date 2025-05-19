@@ -71,7 +71,6 @@
       position: relative;
       z-index: 3; // Ensure content is above the image
     }
-
     // Clip the background image to the card bounds
     &::before {
       content: "";
@@ -90,12 +89,17 @@
       cursor: pointer; // Only actual cards have pointer cursor
       &:hover {
         color: black;
-        background-color: #E2D6C5;
+        background-color: #E6DCCC;
       }
     }
 
     @media (max-width: 620px) {
       max-width: 50%;
+    }
+    .arrow {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
     }
   }
 

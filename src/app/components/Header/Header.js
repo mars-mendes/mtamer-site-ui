@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react"
 import styles from "./Header.module.scss";
-import { ModalContext } from "../../page";
+import { ModalContext } from "../../page.js";
 
 
 export default function Header() {
@@ -35,7 +35,7 @@ export default function Header() {
         }
     ]
 
-    const bgColor = scrolled || isOpen ? '#D9D9D9' : '#E2D6C5';
+    const bgColor = scrolled || isOpen ? '#D9D9D9' : '#E6DCCC';
 
     const handleMenu = () => {
         setModalType("menu");
