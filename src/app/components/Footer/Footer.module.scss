@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 5rem;
+    padding-top: 1rem;
     min-width: 100vw;
     font-family: "Space Grotesk", serif;
     gap: 2rem;
@@ -47,6 +48,10 @@
                     color: black;
                 }
 
+                .tel {
+                    margin-bottom: 1rem;
+                }
+
                 hr {
                     margin-left: 0.7rem;
                     width: 25%;
@@ -57,5 +62,9 @@
 
             }
         }
+    }
+
+    .map {
+        margin-top: 9px;
     }
 }

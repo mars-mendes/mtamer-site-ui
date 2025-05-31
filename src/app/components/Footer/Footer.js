@@ -18,7 +18,7 @@ export default function Footer(content) {
                             <div className={`row ${styles.contactUsLinks}`}>
                                 <hr className={`${styles.line}`} />
                                 <p>{data.end}</p>
-                                <a className={styles.link} target="_blank" href={data.telefone}>
+                                <a className={`${styles.tel} ${styles.link}`} target="_blank" href={data.telefone}>
                                     {data.telefone}
                                 </a>
                                 <a className={styles.link} target="_blank" href={`mailto:${data.email}`}>
