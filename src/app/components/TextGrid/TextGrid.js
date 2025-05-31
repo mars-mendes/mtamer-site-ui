@@ -16,27 +16,27 @@ export default function TextGrid(content) {
     return (
         <>
             <div className={`row ${styles.textGrid}`}>
-                <div className={`col-lg-2  col-md-8 col-sm-4 ${styles.title}`}> {data.title} </div>
+                <div className={`col-lg-2  col-12 ${styles.title}`}> {data.title} </div>
                 <div className={`row ${styles.titleMobile}`}>
                     <span className={styles.titleString}>
                         {data.title}
                     </span>
                 </div>
                 {data.type === 'article' ?
-                    (<div className={`col-lg-8 col-md-8 col-sm-4 ${styles.contentWrapper}`}>
-                        <div className={`col-lg-6 col-md-8 col-sm-4 ${styles.quote}`}> {data.quote} </div>
-                        <div className={`col-lg-6 col-md-8 col-sm-4 ${styles.textContent}`}>
+                    (<div className={`col-lg-8 col-12 ${styles.contentWrapper}`}>
+                        <div className={`col-6 ${styles.quote}`}> {data.quote} </div>
+                        <div className={`col-6 ${styles.textContent}`}>
                             {data.content.split("\n").map((line, i) => (
                                 <p key={i} className={styles.copy}>{line}</p>
                             ))}
                         </div>
-                        <div className={`col-lg-6 col-md-8 col-sm-4 ${styles.textReadMore}`}>
+                        <div className={`col-lg-6 col-12 ${styles.textReadMore}`}>
                             <ReadMore className={styles.copy} text={data.content} />
                         </div>
                     </div>)
                     : data.type === 'profile' ?
-                        (<div className={`col-lg-8 col-md-3 col-sm-4 ${styles.profileWrapper}`}>
-                            <div className={`col-lg-6 col-md-6 col-sm-4 ${styles.profileContent}`}>
+                        (<div className={`col-lg-8 col-12 ${styles.profileWrapper}`}>
+                            <div className={`col-6 ${styles.profileContent}`}>
                                 <p className={`row ${styles.profileData}`}>
                                     <b>{data.profile.name}</b>
                                     <span>
@@ -57,7 +57,7 @@ export default function TextGrid(content) {
                                     </a>
                                 </div>
                             </div>
-                            <img className={`col-lg-6 col-md-6 col-sm-4 ${styles.profilePic}`} src={`${data.profile.picture}`} />
+                            <img className={`col-lg-6 col-6 ${styles.profilePic}`} src={`${data.profile.picture}`} />
                             {/* <img src={`/mtamer-site-ui${data.profile.picture}`} /> */}
                         </div>)
                         : null}

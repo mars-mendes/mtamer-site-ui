@@ -28,6 +28,9 @@
                         padding-right: 0;
                     }
                 }
+                @media(max-width: 1365px){
+                    display: none;
+                }
             }
 
             .links {
@@ -108,14 +111,15 @@
         padding: 2rem;
         height: 100px;
         min-width: 102vw;
-        background-color: #E6DCCC;
+        background-color: #ECE6D8;
         color: black;
         z-index: 10;
 
         .navWrapper {
             position: absolute;
             top: 25%;
-            background-color: #E6DCCC;
+            right: -15px;
+            background-color: #ECE6D8;
             min-width: 100vw;
 
             .desktop {

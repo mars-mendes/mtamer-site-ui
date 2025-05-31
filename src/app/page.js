@@ -29,6 +29,15 @@ export default function Home() {
   const modalData = modalType === "profile" ? data.equipe : data.praticas;
   const modalClass = modalType === "menu" ? styles.pageMenuWrapper : styles.pageModalWrapper
 
+  const scrollRef = useRef(null);
+
+    useEffect(() => {
+        if (isOpen && scrollRef.current) {
+            // Scroll to top when modal is shown
+            scrollRef.current.scrollTop = 0;
+        }
+    }, [isOpen]);
+
   return (
     <div className="d-flex flex-column min-vh-100" style={{ maxWidth: '100vw' }}>
       <ModalContext.Provider value={{ isOpen, setIsOpen, selectedCard, setSelectedCard, modalType, setModalType, scrolled, setScrolled }}>
@@ -57,17 +66,18 @@ export default function Home() {
               <div className={`row justify-content-center ${styles.contentRow}`} >
                 <TextGrid content={data.respSocialCorp} />
               </div>
-              <a id="contato" className={styles.anchor}></a>
+              <a id="premios" className={styles.anchor}></a>
               <div className={`row justify-content-center ${styles.contentRow}`} >
                 <Awards content={data.premios} />
               </div>
             </div>
+              <a id="contato" className={styles.anchor}></a>
             <div className={`row justify-content-center ${styles.contentRow}`}>
               <Footer content={data.contato} />
             </div>
           </div>
         ) : (
-          <div className={`row ${styles.pageWrapper} ${modalClass}`} style={{ backgroundColor: "#E6DCCC", overflowX: "hidden!important" }}>
+          <div className={`row ${styles.pageWrapper} ${modalClass}`} style={{ backgroundColor: "#ECE6D8", overflowX: "hidden!important" }} ref={scrollRef}>
             <Modal content={modalData} />
           </div>
         )

@@ -277,6 +277,56 @@
                         }
                     ]
                 }
+            },
+            {
+                "title": "Família, sucessões e patrimônio",
+                "imageSrc": "/modals/familiar.png",
+                "content": {
+                    "fullTitle": "Família, Sucessões e Planejamento Patrimonial e Sucessório",
+                    "copy": "Apoiamos nossos clientes em decisões sensíveis e estruturantes, com foco na preservação do patrimônio, estabilidade familiar e segurança jurídica em todas as fases da vida pessoal e empresarial. Nossa atuação alia conhecimento técnico, sensibilidade e experiência na condução de assuntos familiares complexos. Nossos principais produtos e serviços incluem:",
+                    "topics": [
+                        {
+                            "id": "fam-rel-familiares",
+                            "title": "Família e relações familiares:",
+                            "copy": "Atuamos em processos de divórcio consensual e litigioso, constituição, reconhecimento e dissolução de união estável, elaboração de pactos antenupciais e escrituras de convivência, alteração consensual de regime de bens, além de regulamentação de guarda, visitas e regime de convivência. Também assessoramos em ações de alimentos, investigação e negatória de paternidade, interdição e temas correlatos."
+                        },
+                        {
+                            "id": "inventarios-sucessoes",
+                            "title": "Inventários e sucessões:",
+                            "copy": "Prestamos assessoria completa em inventários judiciais e extrajudiciais, arrolamentos, ações de sonegados, anulação de partilhas e pedidos de alvará. Atuamos em todas as etapas, com foco na agilidade e na preservação dos vínculos familiares, inclusive em questões internacionais envolvendo a homologação de sentenças estrangeiras."
+                        },
+                        {
+                            "id": "planejamento-patrimonial-sucessorio",
+                            "title": "Planejamento patrimonial e sucessório: ",
+                            "copy": "Desenvolvemos estruturas jurídicas sob medida para a preservação e a transição organizada do patrimônio familiar, considerando os valores e objetivos da família. Elaboramos testamentos, contratos de doação, antecipação de legítima, constituição de usufruto e direito real de habitação. Também oferecemos suporte completo para reorganizações societárias, estruturação e administração de holdings, acordos entre sócios estruturação patrimonial e sucessória, incluindo bens no Brasil e no exterior."
+                        },
+                        {
+                            "id": "filantropia-legado",
+                            "title": "Filantropia e legado: ",
+                            "copy": "Assessoramos na constituição e governança de entidades sem fins lucrativos, como associações, fundações e institutos, orientando nossos clientes na criação de estruturas perenes que concretizem causas familiares e ampliem o impacto social de seus projetos. Atuamos também na formação de fundos patrimoniais (endowments) e na obtenção de certificações e isenções fiscais."
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Gaming, esportes e apostas",
+                "imageSrc": "/modals/bets.png",
+                "content": {
+                    "fullTitle": "Gaming, Gambling, Esports e Apostas Reguladas",
+                    "copy": "Apoiamos nossos clientes nos desafios jurídicos, estratégicos e regulatórios do setor de entretenimento digital, com foco especial em gaming, gambling, esports e apostas reguladas. Atuamos com soluções jurídicas completas, que asseguram conformidade, reduzem riscos e potencializam oportunidades nesse setor em franca expansão no Brasil e no mundo.\n\nNossos serviços combinam excelência técnica, visão estratégica e conhecimento das melhores práticas nacionais e internacionais, com atenção permanente à evolução normativa brasileira — incluindo a nova Lei das Apostas (Lei nº 14.790/2023), as Portarias da Secretaria de Prêmios e Apostas do Ministério da Fazenda, e regulação de fantasy games, loot boxes e eSports.\n\nEm sinergia com as demais práticas do escritório, atuamos de forma a mitigar riscos e assessorar os clientes nas melhores práticas e questões regulatórias e de responsabilização. Nossos principais produtos e serviços incluem:",
+                    "topics": [
+                        {
+                            "id": "gaming-eSports",
+                            "title": "Gaming e eSports: ",
+                            "copy": "Assessoramos empresas na classificação regulatória de produtos digitais como jogos eletrônicos, NFTs, metaverso, loot boxes e modelos “play-to-earn”, além da estruturação jurídica de operações e monetizações. Elaboramos contratos e termos de uso específicos para publishers, estúdios, plataformas e pro players, e oferecemos apoio jurídico em relação às propriedades e práticas."
+                        },
+                        {
+                            "id": "apostas-bets",
+                            "title": "Apostas e Bets",
+                            "copy": "Realizamos análises sobre a legalidade das práticas de jogos e apostas sob legislação brasileira, com o aconselhamento jurídico respectivo nas áreas de integridade, prevenção, privacidade, propriedade intelectual etc. Atuamos na estruturação jurídica de operadores, plataformas e agentes autorizados, bem como no aconselhamento regulatório para a obtenção de licenças e autorizações junto à Secretaria de Prêmios e Apostas. Também elaboramos políticas de compliance, de prevenção à lavagem de dinheiro e de promoção do jogo responsável, além de assessorar modelos de pagamentos e operações com prestadores financeiros."
+                        }
+                    ]
+                }
             }
         ]
     },
@@ -289,9 +339,9 @@
             "bioLabel": "Ver bio completa"
         },
         "profile": {
-            "name": "Marurício Tamer",
+            "name": "Maurício Tamer",
             "role": "Sócio",
-            "picture": "/MauricioTamer.webp",
+            "picture": "/Mauricio_tamer_retrato.jpeg",
             "linkedin": "https://www.linkedin.com/in/mauríciotamer/",
             "lattes": "https://lattes.cnpq.br/1292641448156094",
             "bio": "Com 15 anos de experiência nos setores privado, público e na academia, Maurício Tamer procura prestar a melhor assessoria preventiva a clientes em assuntos relacionados a conformidade jurídica, mitigação de riscos e contratos para proteção e escalabilidade ao negócio. Acredita que o resultado eficiente é a melhor conquista.\n\n Com foco nas diversas práticas do Escritório, auxilia os clientes na estruturação e implementação de negócios e a elaboração e revisão dos documentos pertinentes como regulamentos, políticas, avaliações de risco e contratos, treinamentos e estratégias de conscientização e governança corporativa. \n\nAtua também na defesa administrativa e judicial dos interesses dos clientes, sempre prezando por uma abordagem técnica, tática e estratégica.",

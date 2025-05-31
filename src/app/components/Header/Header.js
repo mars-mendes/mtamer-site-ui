@@ -22,12 +22,12 @@ export default function Header() {
             url: "#equipe"
         },
         {
-            label: "Conteúdo",
-            url: "#conteudo"
-        },
-        {
             label: "Responsabilidade",
             url: "#responsabilidade"
+        },
+        {
+            label: "Prêmios",
+            url: "#premios"
         },
         {
             label: "Contato",
@@ -35,7 +35,7 @@ export default function Header() {
         }
     ]
 
-    const bgColor = scrolled || isOpen ? '#D9D9D9' : '#E6DCCC';
+    const bgColor = scrolled || isOpen ? '#D9D9D9' : '#ECE6D8';
 
     const handleMenu = () => {
         setModalType("menu");
@@ -55,10 +55,10 @@ export default function Header() {
                                         <div className={`col-lg-7 col-md-3 col-sm-3`} onClick={() => setIsOpen(false)} href="/">
                                             <img src="/vector.svg" className={styles.logoSmall} />
                                         </div>
-                                        <div className={`col-lg-1 col-md-1 col-sm-1 ${styles.headerLinksMobile}`} onClick={() => handleMenu()}>
+                                        <div className={`col-lg-1 col-md-2 col-sm-2 ${styles.headerLinksMobile}`} onClick={() => handleMenu()}>
                                             <img src="/menu.svg" />
                                         </div>
-                                        <div className={`col-lg-5 col-sm-0 ${styles.headerLinksDesktopL1}`}>
+                                        <div className={`col-5 col-sm-0 ${styles.headerLinksDesktopL1}`}>
                                             {labels.map((item, i) => {
                                                 return (
                                                     <a key={i} href={item.url} className={`col-2 ${styles.links}`} onClick={() => setIsOpen(false)}>{item.label}</a>
