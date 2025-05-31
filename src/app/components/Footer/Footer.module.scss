@@ -1,9 +1,10 @@
 .footer {
     position: relative;
-    background-color: #E6DCCC;
+    background-color: #ECE6D8;
     display: flex;
     flex-direction: row;
     padding-bottom: 5rem;
+    padding-top: 1rem;
     min-width: 100vw;
     font-family: "Space Grotesk", serif;
     gap: 2rem;
@@ -23,16 +24,23 @@
 
     .content {
         white-space: pre-wrap;
-
+        &Wrapper {
+            padding-left: 4%;
+        }
         .contactUs {
             &Content {
                 padding-right: 2rem;
+                align-items: flex-start;
+
             }
 
             &Links {
                 margin: 0 2rem;
                 font-size: 1rem;
-                margin-left: 1.2rem;
+                margin-left: 0.8rem;
+                @media(max-width: 1110px) {
+                    margin-left: -0.8rem;
+                }
 
                 .link {
                     cursor: pointer;
@@ -40,15 +48,23 @@
                     color: black;
                 }
 
+                .tel {
+                    margin-bottom: 1rem;
+                }
+
                 hr {
                     margin-left: 0.7rem;
                     width: 25%;
-                    background-color: black!important;
-                    border-color: black!important;
+                    background-color: black !important;
+                    border-color: black !important;
                     opacity: 1;
                 }
 
             }
         }
+    }
+
+    .map {
+        margin-top: 9px;
     }
 }

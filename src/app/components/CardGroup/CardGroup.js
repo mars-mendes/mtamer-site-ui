@@ -54,7 +54,7 @@ export default function CardGroup(content) {
   return (
     <div className={styles.CardGroup} style={{ marginBottom: "4%" }}>
       <div className={`row ${styles.CardGroupTitleWrapper}`}>
-        <p className={`col-2 ${styles.CardGroupTitle}`}>{data.title}</p>
+        <p className={`col-lg-2 col-6  ${styles.CardGroupTitle}`}>{data.title}</p>
       </div>
       <div className={styles.content}>
         {/* Background image container */}

@@ -31,7 +31,7 @@
         overflow-y: scroll;
         overflow-x: hidden;
         font-family: "Space Grotesk", serif;
-        background-color: #E6DCCC;
+        background-color: #ECE6D8;
         min-width: 100%;
         min-height: max-content;
         position: relative;
@@ -71,6 +71,7 @@
                 display: block;
                 max-height: 25rem;
                 max-width: 100%;
+                aspect-ratio: 1/1;
                 @media(min-width: 1200px){
                     max-width: 30vw;
                 }

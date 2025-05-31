@@ -1,11 +1,11 @@
-import { useContext } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { ModalContext } from "../../page.js";
 import styles from "./Modal.module.scss";
 
 
 export default function Modal(content) {
     const data = content?.content;
-    const { setIsOpen, modalType, selectedCard } = useContext(ModalContext);
+    const { isOpen, setIsOpen, modalType, selectedCard } = useContext(ModalContext);
     const topics = selectedCard?.content?.topics;
     const copy = selectedCard?.content?.copy;
     const bio = data.profile?.bio;
@@ -14,6 +14,8 @@ export default function Modal(content) {
     const handleReturn = () => {
         setIsOpen(false);
     }
+
+    
 
     const labels = [
         {
@@ -69,7 +71,7 @@ export default function Modal(content) {
                         </div>
                     </div>
                 )}
-                <div className={`row ${styles.modal}`}>
+                <div className={`row ${styles.modal}`} >
                     {modalType === "praticas" ? (
                         <>
                             {topics ? (
