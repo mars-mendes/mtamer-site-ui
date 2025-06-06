@@ -7,6 +7,7 @@ import { ModalContext } from "../../page.js";
 export default function CardGroup(content) {
   const data = content?.content;
   const categories = content?.content.especsData;
+  const categoriesSorted = categories.sort((a,b) => a.title.localeCompare(b.title));
   const wrapperRef = useRef(null);
   const cardRefs = useRef([]);
   const [columns, setColumns] = useState(4); // Default column count
@@ -65,11 +66,11 @@ export default function CardGroup(content) {
         {/* Cards container */}
         <div className={`row ${styles.cardWrapper}`} ref={wrapperRef}>
           {/* Render actual cards */}
-          {categories.map((item, i) => {
+          {categoriesSorted.map((item, i) => {
             const isFirstColumn = i % columns === 0;
             const isLastColumn = (i + 1) % columns === 0;
             const isFirstRow = i < columns;
-            const isLastCard = i === categories.length - 1;
+            const isLastCard = i === categoriesSorted.length - 1;
             const isSecondColumn = i % columns === 1;
 
             let borderStyle = {};
