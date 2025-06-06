@@ -24,8 +24,8 @@ export default function TextGrid(content) {
                 </div>
                 {data.type === 'article' ?
                     (<div className={`col-lg-8 col-12 ${styles.contentWrapper}`}>
-                        <div className={`col-6 ${styles.quote}`}> {data.quote} </div>
-                        <div className={`col-6 ${styles.textContent}`}>
+                        <div className={`col-lg-6 col-12 ${styles.quote}`}> {data.quote} </div>
+                        <div className={`col-lg-6 col-12 ${styles.textContent}`}>
                             {data.content.split("\n").map((line, i) => (
                                 <p key={i} className={styles.copy}>{line}</p>
                             ))}
@@ -36,7 +36,7 @@ export default function TextGrid(content) {
                     </div>)
                     : data.type === 'profile' ?
                         (<div className={`col-lg-8 col-12 ${styles.profileWrapper}`}>
-                            <div className={`col-6 ${styles.profileContent}`}>
+                            <div className={`col-lg-6 col-12 ${styles.profileContent}`}>
                                 <p className={`row ${styles.profileData}`}>
                                     <b>{data.profile.name}</b>
                                     <span>
