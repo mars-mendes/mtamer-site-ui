@@ -12,6 +12,7 @@
   }
   
   .readMoreButton {
+    width: 100%;
     display: block;
     margin-top: 1rem;
     margin-left: 2px;
@@ -26,11 +27,12 @@
 
     .text {
       position: relative;
-      left: -40%;
+      left: 0;
+      margin-right: 50%;
     }
     .plus {
       position: relative;
-      right: -40%;
+      right: 0;
       
     }
   }

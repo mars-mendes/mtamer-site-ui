@@ -6,20 +6,29 @@
   height: 100%;
   overflow: hidden;
 
+  @media(max-width: 600px) {
+    min-width: 100vw;
+    position: relative;
+    left: 0.5rem;
+  }
+
   &Title {
     border-top: solid 1px black;
     padding: 0.5rem;
     padding-left: 0;
     padding-top: 1rem;
+
     &Wrapper {
       min-width: 90%;
       margin-left: -2%;
       padding: 2rem;
-      @media(max-width: 1100px){
+
+      @media(max-width: 1100px) {
         margin-left: -3%;
       }
-      @media(max-width: 600px){
-        margin-left: -2rem;
+
+      @media(max-width: 600px) {
+        margin-left: -1rem;
       }
     }
   }
@@ -35,7 +44,11 @@
   height: 100%;
   padding: 0 0.5rem;
   background-color: white; // White background for the entire component
-  
+
+  @media(max-width: 600px) {
+    min-width: 100vw;
+  }
+
   // Background image container
   .backgroundImage {
     position: absolute;
@@ -47,20 +60,25 @@
     background-size: cover;
     background-position: center;
     z-index: 1; // Place it below the cards
-    clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      100% 100%,
-      0% 100%
-    ); // Default clip-path (full container)
-  }
+    clip-path: polygon(0% 0%,
+        100% 0%,
+        100% 100%,
+        0% 100%); // Default clip-path (full container)
 
+    @media(max-width: 600px) {
+      min-width: 100vw;
+    }
+  }
+  
   // Card wrapper
   .cardWrapper {
     position: relative;
     z-index: 2; // Place it above the background image
     display: flex;
     flex-wrap: wrap;
+    @media(max-width: 600px) {
+      min-width: 100vw;
+    }
   }
 
   // Individual cards
@@ -79,6 +97,7 @@
       position: relative;
       z-index: 3; // Ensure content is above the image
     }
+
     // Clip the background image to the card bounds
     &::before {
       content: "";
@@ -95,6 +114,7 @@
     // Hover effect for actual cards (exclude placeholder cards)
     &:not(.placeholderCard) {
       cursor: pointer; // Only actual cards have pointer cursor
+
       &:hover {
         color: black;
         background-color: #ECE6D8;
@@ -104,6 +124,7 @@
     @media (max-width: 620px) {
       max-width: 50%;
     }
+
     .arrow {
       position: absolute;
       bottom: 1rem;

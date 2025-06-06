@@ -23,9 +23,10 @@ const ReadMore = ({ text }) => {
                 </p>
             {isMobile && !isExpanded && (
                 <button className={`row ${styles.readMoreButton}`} onClick={() => setIsExpanded(true)}>
-                    <span className={`col-sm-3 ${styles.text}`}>
+                    <span className={`col-sm-4 ${styles.text}`}>
                         Ler Mais
                     </span>
+                    {/* <div className="col"/> */}
                     <span className={`col-sm-1 ${styles.plus}`}>
                         +
                     </span>
@@ -35,7 +36,7 @@ const ReadMore = ({ text }) => {
                 <button
                     className={`row ${styles.readMoreButton}`}
                     onClick={() => setIsExpanded(false)}>
-                    <span className={`col-sm-3 ${styles.text}`}>
+                    <span className={`col-sm-1 ${styles.text}`}>
                         Ler Menos
                     </span>
                     <span className={`col-sm-1 ${styles.plus}`}>
