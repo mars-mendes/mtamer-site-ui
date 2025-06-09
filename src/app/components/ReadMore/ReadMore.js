@@ -17,17 +17,16 @@ const ReadMore = ({ text }) => {
     const firstParagraph = text.split("\n")[0]; // Assuming paragraphs are separated by line breaks
 
     return (
-        <div className={styles.readMoreContainer}>
+        <div className={`${styles.readMoreContainer}`}>
                 <p ref={textRef} className={isExpanded || !isMobile ? styles.fullText : styles.collapsedText}>
                     {isExpanded || !isMobile ? text : firstParagraph}
                 </p>
             {isMobile && !isExpanded && (
-                <button className={`row ${styles.readMoreButton}`} onClick={() => setIsExpanded(true)}>
-                    <span className={`col-sm-4 ${styles.text}`}>
+                <button className={`d-flex justify-content-between align-items-center ${styles.readMoreButton}`} onClick={() => setIsExpanded(true)}>
+                    <span className={`text-start ${styles.text}`}>
                         Ler Mais
                     </span>
-                    {/* <div className="col"/> */}
-                    <span className={`col-sm-1 ${styles.plus}`}>
+                    <span className={`text-end ${styles.plus}`}>
                         +
                     </span>
                 </button>

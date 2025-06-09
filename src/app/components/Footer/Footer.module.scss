@@ -9,36 +9,83 @@
     font-family: "Space Grotesk", serif;
     gap: 2rem;
 
-    .logos {
-        display: flex;
-        flex-direction: column;
+    @media(max-width: 600px) {
+        left: 1.2rem;
+    }
 
+    .logos {
         .mainLogo {
             fill: black;
             max-height: 44px;
             align-items: flex-start;
             margin-top: 1rem;
             margin-bottom: 6rem;
+
+            @media(max-width: 1100px) {
+                margin-left: 1.2rem;
+            }
+
+            @media(max-width: 950px) and (min-width: 850px) {
+                position: relative;
+                left: -2.5%;
+            }
+
+            @media(max-width: 850px) and (min-width: 601px) {
+                margin-left: -5%;
+            }
+            @media(max-width: 580px) and (min-width: 500px) {
+                margin-left: 4px;
+            }
         }
     }
 
     .content {
         white-space: pre-wrap;
+
         &Wrapper {
             padding-left: 4%;
+
+            @media(max-width: 1100px) and (min-width: 950px) {
+                position: relative;
+                left: -10rem;
+            }
+
+            @media(max-width: 950px) and (min-width: 850px) {
+                position: relative;
+                left: -4.2rem;
+            }
+            
+            @media(max-width: 650px) and (min-width: 500px) {
+                padding-left: 1%;
+            }
         }
+
         .contactUs {
             &Content {
                 padding-right: 2rem;
                 align-items: flex-start;
 
+                @media(max-width: 900px) {
+                    margin-left: -3.2rem;
+                }
+
+                @media(max-width: 600px) {
+                    margin-left: -2rem;
+                }
+                @media(max-width: 580px) and (min-width: 500px) {
+                    margin-left: -2.05rem;
+                }
             }
 
             &Links {
                 margin: 0 2rem;
                 font-size: 1rem;
                 margin-left: 0.8rem;
-                @media(max-width: 1110px) {
+
+                @media(max-width: 1110px) and (min-width: 851px){
+                    margin-left: 2rem;
+                }
+                @media(max-width: 850px) and (min-width: 751px){
                     margin-left: -0.8rem;
                 }
 
@@ -66,5 +113,14 @@
 
     .map {
         margin-top: 9px;
+        @media(max-width: 1110px) and (min-width: 751px){
+            margin-left: -9%;
+        }
+        @media(max-width: 750px) {
+            margin-left: -7.2%;
+        }
+        @media(max-width: 580px) and (min-width: 500px) {
+            margin-left: -4.2rem;
+        }
     }
 }

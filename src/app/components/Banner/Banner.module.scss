@@ -18,9 +18,12 @@
     video {
         width: 100%;
     }
-    @media(max-width: 991px) and (min-width: 600px){
+    @media(max-width: 991px) and (min-width: 601px){
         left: -0.4rem;
         min-width: 102vw;
+    }
+    @media(max-width: 600px){
+        left: 0.4rem;
     }
 
 }
