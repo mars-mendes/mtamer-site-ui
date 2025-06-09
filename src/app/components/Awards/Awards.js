@@ -12,12 +12,12 @@ const Awards = (content) => {
                         {data.title}
                     </span>
                 </div>
-                <div className={`col-lg-10 col-12 container-fluid ${styles.cardAwardsWrapper}`}>
+                <div className={`col-xl-10 col-12 container-fluid ${styles.cardAwardsWrapper}`}>
                     <div className="row">
                         {data.cards.map((card, i) => {
                             const lessMarginClass = i === 0 || i === 2 ? styles.lessMargin : "";
                             return (
-                                <div className={`col-lg-5 ${styles.cardAwards} ${lessMarginClass}`} key={i}>
+                                <div className={`col-lg-5 col-md-5 ${styles.cardAwards} ${lessMarginClass}`} key={i}>
                                     <div className={`${styles.cardAwardsContent}`}>
                                         <b>{card.title}</b><br/>
                                         <span className="align-top">{card.description}</span>

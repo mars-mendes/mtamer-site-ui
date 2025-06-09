@@ -41,7 +41,7 @@
 
                 .titleString {
                     position: absolute;
-                    left: -8%;
+                    left: -6%;
                 }
 
             }
@@ -57,7 +57,7 @@
 
             @media(max-width: 1100px) {
                 min-width: 65vw;
-                margin-left: -0.5%;
+                // margin-left: -0.5%;
                 flex-direction: row !important;
                 border-top: none;
                 gap: 0.05rem;
@@ -85,6 +85,9 @@
                 @media(max-width: 1100px) {
                     border-top: solid 1px black;
                     margin-left: -3.8vw;
+                }
+                @media(max-width: 400px){
+                    margin-left: -6vw;
                 }
             }
 
