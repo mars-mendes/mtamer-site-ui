@@ -45,6 +45,9 @@
             margin-left: 2rem;
             margin-bottom: 2rem;
         }
+        @media(max-width: 520px){
+            min-width: 90vw;
+        }
         
         &.lessMargin {
             margin-left: 0;

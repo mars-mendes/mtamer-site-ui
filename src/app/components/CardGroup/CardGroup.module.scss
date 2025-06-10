@@ -7,9 +7,10 @@
   overflow: hidden;
 
   @media(max-width: 600px) {
-    min-width: 100vw;
+    min-width: 102.05vw;
     position: relative;
-    left: 0.5rem;
+    left: 0.8rem;
+    padding-right: 0;
   }
 
   &Title {
@@ -47,6 +48,7 @@
 
   @media(max-width: 600px) {
     min-width: 100vw;
+    padding-right: none;
   }
 
   // Background image container
@@ -69,15 +71,16 @@
       min-width: 100vw;
     }
   }
-  
+
   // Card wrapper
   .cardWrapper {
     position: relative;
     z-index: 2; // Place it above the background image
     display: flex;
     flex-wrap: wrap;
+
     @media(max-width: 600px) {
-      min-width: 100vw;
+      min-width: 102vw;
     }
   }
 
