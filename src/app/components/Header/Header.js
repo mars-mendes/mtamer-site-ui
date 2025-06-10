@@ -73,9 +73,12 @@ export default function Header() {
                         <>
                             <div className={`row ${styles.navB}`}>
                                 <div className={`row ${styles.navWrapper}`}>
-                                    <div className={`col-lg-7 col-md-6 col-sm-3`}>
-                                        <img src="/logo-full.svg" className={styles.logoFull} />
+                                    <div className={`col-lg-7 col-md-3 col-sm-3`}>
+                                        <div className={styles.logoFullWrapper}>
+                                            <img src="/logo-full.svg" className={styles.logoFull} />
+                                        </div>
                                     </div>
+                                    <div className={`col-6 col-sm-4`} />
                                     <div className={`col-lg-5 ${styles.headerLinksDesktop}`}>
                                         {labels.map((item, i) => {
                                             return (

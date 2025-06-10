@@ -99,6 +99,10 @@
         .logoSmall {
             max-height: 30px;
             fill: black;
+            @media(max-width: 520px) {
+                position: relative;
+                left: -1rem;
+            }
         }
 
         .navWrapper {
@@ -138,8 +142,17 @@
         }
 
         .logoFull {
-            position: relative;
+            position: absolute;
+            left: 0;
             max-height: 72px;
+            width: max-content;
+            &Wrapper{
+                position: relative;
+                width: 100%;
+            }
+            @media(max-width: 520px) {
+                left: -1rem;
+            }
         }
 
         @media(max-width: 520px) {
