@@ -31,12 +31,12 @@ export default function Home() {
 
   const scrollRef = useRef(null);
 
-    useEffect(() => {
-        if (isOpen && scrollRef.current) {
-            // Scroll to top when modal is shown
-            scrollRef.current.scrollTop = 0;
-        }
-    }, [isOpen]);
+  useEffect(() => {
+    if (isOpen && scrollRef.current) {
+      // Scroll to top when modal is shown
+      scrollRef.current.scrollTop = 0;
+    }
+  }, [isOpen]);
 
   return (
     <div className="d-flex flex-column min-vh-100" style={{ maxWidth: '100vw' }}>
@@ -70,10 +70,10 @@ export default function Home() {
               <div className={`row justify-content-center ${styles.contentRow}`} >
                 <Awards content={data.premios} />
               </div>
-            </div>
               <a id="contato" className={styles.anchor}></a>
-            <div className={`row justify-content-center ${styles.contentRow}`}>
-              <Footer content={data.contato} />
+              <div className={`row justify-content-center ${styles.footer}`}>
+                <Footer content={data.contato} />
+              </div>
             </div>
           </div>
         ) : (

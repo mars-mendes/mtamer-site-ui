@@ -45,12 +45,24 @@
             margin-left: 2rem;
             margin-bottom: 2rem;
         }
-        @media(max-width: 520px){
+        @media(max-width: 520px) and (min-width: 401px){
             min-width: 90vw;
+            aspect-ratio: 4/3;
+        }
+        @media(max-width: 400px){
+            // min-width: 90vw;
+            min-width: 95vw;
+            margin-left: -0.8rem;
+        }
+        @media(max-width: 350px){
+            margin-left: -1rem;
         }
         
         &.lessMargin {
             margin-left: 0;
+            @media(max-width: 400px){
+                margin-left: -0.8rem;
+            }
         }
 
         &Wrapper {
@@ -71,8 +83,9 @@
 
         &Content {
             min-height: 10rem;
+            aspect-ratio: 4/3;
             @media(max-width: 600px){
-                height: 14rem;
+                height: 11rem;
             }
         }
 
