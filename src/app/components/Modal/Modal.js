@@ -31,12 +31,12 @@ export default function Modal(content) {
             url: "#equipe"
         },
         {
-            label: "Conteúdo",
-            url: "#conteudo"
-        },
-        {
             label: "Responsabilidade",
             url: "#responsabilidade"
+        },
+        {
+            label: "Prêmios",
+            url: "#premios"
         },
         {
             label: "Contato",

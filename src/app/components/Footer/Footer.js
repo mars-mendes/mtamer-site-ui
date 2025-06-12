@@ -18,12 +18,12 @@ export default function Footer(content) {
                             <div className={`row ${styles.contactUsLinks}`}>
                                 <hr className={`${styles.line}`} />
                                 <p>{data.end}</p>
-                                <a className={`${styles.tel} ${styles.link}`} target="_blank" href={data.telefone}>
+                                <span className={`${styles.tel} ${styles.link}`}>
                                     {data.telefone}
-                                </a>
-                                <a className={styles.link} target="_blank" href={`mailto:${data.email}`}>
+                                </span>
+                                <span className={styles.link}>
                                     {data.email}
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
