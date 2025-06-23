@@ -13,11 +13,10 @@ const Awards = (content) => {
                     </span>
                 </div>
                 <div className={`col-xl-10 col-12 container-fluid ${styles.cardAwardsWrapper}`}>
-                    <div className="row">
+                    <div className="row" style={{gap: "2rem"}}>
                         {data.cards.map((card, i) => {
-                            const lessMarginClass = i === 0 || i === 2 ? styles.lessMargin : "";
                             return (
-                                <div className={`col-lg-5 col-md-5 col-12 ${styles.cardAwards} ${lessMarginClass}`} key={i}>
+                                <div className={`col-lg-5 col-md-5 col-12 ${styles.cardAwards}`} key={i}>
                                     <div className={`${styles.cardAwardsContent}`}>
                                         <b>{card.title}</b><br/>
                                         <span className="align-top">{card.description}</span>
