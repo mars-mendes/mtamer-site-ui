@@ -87,7 +87,8 @@
                     margin-left: -3.8dvw;
                 }
                 @media(max-width: 400px){
-                    margin-left: -6dvw;
+                    position: relative;
+                    left: -0.55rem;
                 }
             }
 
