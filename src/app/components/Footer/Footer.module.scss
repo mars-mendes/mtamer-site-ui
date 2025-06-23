@@ -9,8 +9,9 @@
     font-family: "Space Grotesk", serif;
     gap: 2rem;
 
-    @media(max-width: 600px) {
-        left: 1.2rem;
+    @media(max-width: 768px) {
+        left: 0;
+        flex-direction: column;
     }
 
     .logos {
@@ -21,59 +22,23 @@
             margin-top: 1rem;
             margin-bottom: 6rem;
 
-            @media(max-width: 1100px) {
-                margin-left: 1.2rem;
+           
+            @media(max-width: 768px){
+                margin-left: -1rem;
             }
-
-            @media(max-width: 950px) and (min-width: 850px) {
-                position: relative;
-                left: -2.5%;
             }
-
-            @media(max-width: 850px) and (min-width: 601px) {
-                margin-left: -5%;
-            }
-            @media(max-width: 580px) and (min-width: 500px) {
-                margin-left: 4px;
-            }
-        }
     }
 
     .content {
         white-space: pre-wrap;
-
-        &Wrapper {
-            padding-left: 4%;
-
-            @media(max-width: 1100px) and (min-width: 950px) {
-                position: relative;
-                left: -10rem;
-            }
-
-            @media(max-width: 950px) and (min-width: 850px) {
-                position: relative;
-                left: -4.2rem;
-            }
-            
-            @media(max-width: 650px) and (min-width: 500px) {
-                padding-left: 1%;
-            }
-        }
 
         .contactUs {
             &Content {
                 padding-right: 2rem;
                 align-items: flex-start;
 
-                @media(max-width: 950px) {
-                    margin-left: -3.2rem;
-                }
-
                 @media(max-width: 600px) {
-                    margin-left: -2rem;
-                }
-                @media(max-width: 580px) and (min-width: 500px) {
-                    margin-left: -2.05rem;
+                    margin-left: -1rem;
                 }
             }
 
@@ -82,11 +47,8 @@
                 font-size: 1rem;
                 margin-left: 0.8rem;
 
-                @media(max-width: 1110px) and (min-width: 851px){
-                    margin-left: 2rem;
-                }
-                @media(max-width: 850px) and (min-width: 751px){
-                    margin-left: -0.8rem;
+                @media(max-width: 750px){
+                    margin-left: 0;
                 }
 
                 .link {
@@ -96,6 +58,7 @@
                 }
 
                 .tel {
+                    cursor: initial;
                     margin-bottom: 1rem;
                 }
 
@@ -113,14 +76,13 @@
 
     .map {
         margin-top: 9px;
-        @media(max-width: 1110px) and (min-width: 751px){
-            margin-left: -9%;
-        }
         @media(max-width: 750px) {
-            margin-left: -7.2%;
+            min-width: 100vw;
+            padding-right: 1rem;
         }
-        @media(max-width: 580px) and (min-width: 500px) {
-            margin-left: -4.2rem;
+        @media(max-width: 450px) {
+            padding-left: 0;
+            padding-right: 0.5rem;
         }
     }
 }

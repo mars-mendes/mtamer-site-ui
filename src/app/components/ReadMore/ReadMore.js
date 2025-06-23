@@ -33,12 +33,12 @@ const ReadMore = ({ text }) => {
             )}
             {isMobile && isExpanded && (
                 <button
-                    className={`row ${styles.readMoreButton}`}
+                    className={`d-flex justify-content-between align-items-center ${styles.readMoreButton}`}
                     onClick={() => setIsExpanded(false)}>
-                    <span className={`col-sm-1 ${styles.text}`}>
+                    <span className={`text-start ${styles.text}`}>
                         Ler Menos
                     </span>
-                    <span className={`col-sm-1 ${styles.plus}`}>
+                    <span className={`text-end ${styles.plus}`}>
                         +
                     </span>
 

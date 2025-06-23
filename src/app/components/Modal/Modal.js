@@ -1,11 +1,11 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext } from "react";
 import { ModalContext } from "../../page.js";
 import styles from "./Modal.module.scss";
 
 
 export default function Modal(content) {
     const data = content?.content;
-    const { isOpen, setIsOpen, modalType, selectedCard } = useContext(ModalContext);
+    const { setIsOpen, modalType, selectedCard } = useContext(ModalContext);
     const topics = selectedCard?.content?.topics;
     const copy = selectedCard?.content?.copy;
     const bio = data.profile?.bio;

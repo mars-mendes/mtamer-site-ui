@@ -67,11 +67,11 @@
                 margin-left: 1.5rem;
             }
 
-            @media(max-width: 600px) {
+            @media(max-width: 768px) {
                 margin-left: 1rem;
-                min-width: 90vw;
+                min-width: 100%;
                 flex-direction: column !important;
-                padding-right: 1rem;
+                padding-right: 0;
             }
 
             .quote {
@@ -150,7 +150,8 @@
                 flex-direction: column !important;
                 min-width: 90vw;
             }
-            @media(max-width: 520px) {
+            @media(max-width: 768px) {
+                min-width: 100vw;
                 margin-left: 5px;
             }
         }
@@ -202,8 +203,10 @@
                 margin-top: 2rem;
                 left: -0.5rem;
             }
-            @media(max-width: 520px) {
-                left: -0.66rem;
+            @media(max-width: 768px) {
+                left: -1rem;
+                min-width: 100%;
+                // aspect-ratio: 3/4;
             }
         }
     }
