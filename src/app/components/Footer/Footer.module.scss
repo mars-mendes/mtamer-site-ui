@@ -22,11 +22,11 @@
             margin-top: 1rem;
             margin-bottom: 6rem;
 
-           
-            @media(max-width: 768px){
+
+            @media(max-width: 768px) and (min-width: 520px ) {
                 margin-left: -1rem;
             }
-            }
+        }
     }
 
     .content {
@@ -47,7 +47,7 @@
                 font-size: 1rem;
                 margin-left: 0.8rem;
 
-                @media(max-width: 750px){
+                @media(max-width: 750px) {
                     margin-left: 0;
                 }
 
@@ -76,10 +76,12 @@
 
     .map {
         margin-top: 9px;
+
         @media(max-width: 750px) {
             min-width: 100vw;
             padding-right: 1rem;
         }
+
         @media(max-width: 450px) {
             padding-left: 0;
             padding-right: 0.5rem;
