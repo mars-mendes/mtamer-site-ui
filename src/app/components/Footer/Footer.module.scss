@@ -21,7 +21,9 @@
             align-items: flex-start;
             margin-top: 1rem;
             margin-bottom: 6rem;
-
+            @media(min-width: 769px) {
+                margin-left: 1rem;
+            }
 
             @media(max-width: 768px) and (min-width: 520px ) {
                 margin-left: -1rem;
@@ -46,7 +48,9 @@
                 margin: 0 2rem;
                 font-size: 1rem;
                 margin-left: 0.8rem;
-
+                @media(min-width: 769px) {
+                    margin-left: 1rem;
+                }
                 @media(max-width: 750px) {
                     margin-left: 0;
                 }
