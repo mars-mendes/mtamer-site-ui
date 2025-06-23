@@ -28,7 +28,7 @@ const Banner = () => {
         <div className={`container-fluid p-0 ${styles.bannerWrapper}`} ref={bannerRef}>
             {!isOpen ? (
                 <div className={`${styles.banner}`}>
-                    <div className="container-fluid">
+                    <div className="container-fluid p-0">
                         <video src="MTA_leadspace_video.mp4" autoPlay muted playsInline loop />
                     </div>
                 </div>

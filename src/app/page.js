@@ -51,7 +51,7 @@ export default function Home() {
                 <Banner />
               </div>
               <a id="quem-somos" className={styles.anchor}></a>
-              <div className={`row justify-content-center ${styles.contentRow}`}>
+              <div className={`row justify-content-center ${styles.contentRow} ${styles.textRow}`}>
                 <TextGrid content={data.quemSomos} />
               </div>
               <a id="praticas" className={styles.anchor}></a>
@@ -59,15 +59,15 @@ export default function Home() {
                 <CardGroup content={data.praticas} />
               </div>
               <a id="equipe" className={styles.anchor}></a>
-              <div className={`row justify-content-center ${styles.contentRow}`} >
+              <div className={`row justify-content-center ${styles.contentRow} ${styles.textRow}`} >
                 <TextGrid content={data.equipe} />
               </div>
               <a id="responsabilidade" className={styles.anchor}></a>
-              <div className={`row justify-content-center ${styles.contentRow}`} >
+              <div className={`row justify-content-center ${styles.contentRow} ${styles.textRow}`} >
                 <TextGrid content={data.respSocialCorp} />
               </div>
               <a id="premios" className={styles.anchor}></a>
-              <div className={`row justify-content-center ${styles.contentRow}`} >
+              <div className={`row justify-content-center ${styles.contentRow}  ${styles.textRow}`} >
                 <Awards content={data.premios} />
               </div>
               <a id="contato" className={styles.anchor}></a>

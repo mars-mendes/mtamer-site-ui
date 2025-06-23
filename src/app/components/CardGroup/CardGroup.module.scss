@@ -7,9 +7,9 @@
   overflow: hidden;
 
   @media(max-width: 600px) {
-    min-width: 102.05vw;
+    min-width: 102vw;
     position: relative;
-    left: 0.8rem;
+    left: 0.85rem;
     padding-right: 0;
   }
 
@@ -80,7 +80,7 @@
     flex-wrap: wrap;
 
     @media(max-width: 600px) {
-      min-width: 102vw;
+      min-width: 100vw;
     }
   }
 
