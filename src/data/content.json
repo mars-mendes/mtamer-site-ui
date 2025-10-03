@@ -89,6 +89,13 @@
                 }
             },
             {
+                "title": "Imobiliário",
+                "imageSrc": "/modals/imobiliario.jpg",
+                "content": {
+                    "copy": "Oferecemos assessoria jurídica completa em assuntos de Direito Imobiliário, atendendo às diversas necessidades de clientes no setor. Nossa atuação abrange operações de compra e venda de imóveis, permutas, incorporações imobiliárias, loteamentos e desmembramentos de terrenos, contratos de locação residencial e comercial, estruturação de garantias reais (como hipotecas e alienação fiduciária), regularização fundiária, entre outras atividades ligadas a bens imóveis. Em todas essas frentes, focamos na segurança jurídica das transações e na otimização dos resultados dos nossos clientes, prevenindo riscos e adotando as melhores práticas de mercado.\n\nSomando a expertise da área imobiliária às demais práticas do escritório, atendemos clientes de perfis variados no mercado imobiliário, incluindo incorporadoras, construtoras, loteadoras, investidores individuais e institucionais, fundos de investimento imobiliário, bancos e instituições financeiras (em operações de crédito habitacional), imobiliárias e administradoras de bens, síndicos e associações de condomínio, além de proprietários e adquirentes de imóveis em geral – no Brasil e no exterior. Nossa experiência multifacetada nos permite entender as demandas específicas de cada participante do setor e oferecer soluções jurídicas sob medida, sejam em projetos imobiliários de grande porte, sejam em negócios particulares.\n\nCom uma atuação especializada e multidisciplinar em Direito Imobiliário, nossa equipe auxilia desde a estruturação de empreendimentos até o dia a dia das transações imobiliárias. Prestamos consultoria estratégica para viabilizar projetos (análise de viabilidade jurídica de terrenos, due diligence imobiliária, obtenção de licenças e alvarás), negociamos e elaboramos contratos (promessas de compra e venda, escrituras públicas, contratos de locação built to suit, contratos de parceria ou permuta para incorporação, entre outros) e revisamos documentos visando antecipar e mitigar riscos. Também oferecemos suporte em questões de registro de imóveis e documentação, acompanhando procedimentos cartorários de registro, retificação de área, unificação ou desmembramento de matrículas, instituição de condomínio, regularização de construções e averbações necessárias. No que tange aos aspectos financeiros, assessoramos na estruturação de garantias imobiliárias, emissão de certificados de recebíveis imobiliários (CRI) e demais instrumentos de financiamento e investimento no setor."
+                }
+            },
+            {
                 "title": "Legal Operations",
                 "imageSrc": "/modals/legal_operations.png",
                 "content": {
@@ -341,7 +348,7 @@
         "profile": {
             "name": "Maurício Tamer",
             "role": "Sócio",
-            "picture": "/Mauricio_tamer_retrato.jpg",
+            "picture": "/Mauricio_tamer_novo_retrato.jpg",
             "linkedin": "https://www.linkedin.com/in/mauríciotamer/",
             "lattes": "https://lattes.cnpq.br/1292641448156094",
             "bio": "Com 15 anos de experiência nos setores privado, público e na academia, Maurício Tamer procura prestar a melhor assessoria preventiva a clientes em assuntos relacionados a conformidade jurídica, mitigação de riscos e contratos para proteção e escalabilidade ao negócio. Acredita que o resultado eficiente é a melhor conquista.\n\n Com foco nas diversas práticas do Escritório, auxilia os clientes na estruturação e implementação de negócios e a elaboração e revisão dos documentos pertinentes como regulamentos, políticas, avaliações de risco e contratos, treinamentos e estratégias de conscientização e governança corporativa. \n\nAtua também na defesa administrativa e judicial dos interesses dos clientes, sempre prezando por uma abordagem técnica, tática e estratégica.",
