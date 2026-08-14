@@ -19,6 +19,9 @@ export default function Footer(content) {
                                 <span className={`${styles.tel} ${styles.link}`}>
                                     {data.telefone}
                                 </span>
+                                <span className={`${styles.tel} ${styles.link}`}>
+                                    {data.celular}
+                                </span>
                                 <span className={styles.link}>
                                     {data.email}
                                 </span>
