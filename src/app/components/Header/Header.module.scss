@@ -18,18 +18,24 @@
                 display: block;
                 position: absolute;
                 right: 0;
+
                 .links {
                     padding-right: 2rem;
                     color: black;
                     text-decoration: none;
                     font-size: 1rem;
-    
+
                     &:last-of-type {
                         padding-right: 0;
                     }
                 }
-                @media(max-width: 1365px){
+
+                @media(max-width: 1365px) {
                     display: none;
+                }
+
+                @media(max-width: 1625px) {
+                    right: 4%;
                 }
             }
 
@@ -44,7 +50,7 @@
                 }
             }
 
-            @media(max-width: 1460px) {
+            @media(max-width: 1625px) {
                 right: 4%;
             }
 
@@ -69,6 +75,7 @@
 
                 }
             }
+
             @media(max-width: 850px) {
                 img {
                     position: absolute;
@@ -99,6 +106,7 @@
         .logoSmall {
             max-height: 30px;
             fill: black;
+
             @media(max-width: 520px) {
                 position: relative;
                 left: -1rem;
@@ -110,6 +118,10 @@
             bottom: 1rem;
             display: flex;
             flex-direction: row;
+            @media(max-width: 1625px) {
+                padding-bottom: 0.5rem;
+                padding-top: 0.5rem;
+            }
         }
 
         @media(max-width: 520px) {
@@ -146,10 +158,12 @@
             left: 0;
             max-height: 72px;
             width: max-content;
-            &Wrapper{
+
+            &Wrapper {
                 position: relative;
                 width: 100%;
             }
+
             @media(max-width: 520px) {
                 left: -1rem;
             }

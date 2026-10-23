@@ -300,6 +300,95 @@
                 }
             },
             {
+                "title": "Trabalhista Empresarial",
+                "imageSrc": "/modals/integridade.png",
+                "content": {
+                    "copy": "Assessoramos empresas na estruturação, gestão e encerramento das relações de trabalho, combinando atuação consultiva, preventiva e contenciosa. Nossa prática é orientada à compreensão das necessidades do negócio, à prevenção de conflitos e à redução de contingências, com soluções que conciliem segurança jurídica, eficiência operacional e respeito aos direitos dos trabalhadores.\n\nAtuamos em parceria com as áreas de Recursos Humanos, Jurídico, Compliance e com as lideranças empresariais, oferecendo suporte às decisões cotidianas e às situações de maior complexidade. Consideramos as particularidades de cada setor, os diferentes modelos de contratação e organização do trabalho e as normas coletivas aplicáveis, com recomendações adaptadas à realidade de cada cliente.\n\nEm integração com as demais práticas do escritório, também assessoramos os aspectos trabalhistas de operações societárias, investigações corporativas, projetos de tecnologia e iniciativas de proteção de dados pessoais. Nossos principais produtos e serviços incluem:",
+                    "topics": [
+                        {
+                            "id": "consultoria-gestao-pessoas",
+                            "title": "Consultoria e suporte à gestão de pessoas",
+                            "copy": "Prestamos assessoria contínua às equipes responsáveis pela gestão de pessoas, esclarecendo dúvidas e orientando decisões relacionadas a admissões, alterações contratuais, transferências, promoções, férias, afastamentos, licenças, estabilidades e desligamentos. Elaboramos pareceres e recomendações práticas, considerando os riscos jurídicos, os impactos operacionais e a documentação necessária para cada situação."
+                        },
+                        {
+                            "id": "contratacoes-instrumentos-contratuais",
+                            "title": "Contratações e instrumentos contratuais",
+                            "copy": "Elaboramos, revisamos e negociamos contratos individuais de trabalho, aditivos, termos de confidencialidade, instrumentos de proteção da propriedade intelectual e demais documentos relacionados à contratação de profissionais. Assessoramos a definição de modalidades contratuais adequadas, incluindo contratos de experiência, por prazo determinado, aprendizagem e outras formas de contratação, conforme as características das atividades e os requisitos aplicáveis. Também avaliamos cláusulas de exclusividade, não concorrência, não aliciamento e retenção de profissionais."
+                        },
+                        {
+                            "id": "prestadores-terceirizacao-modelos-trabalho",
+                            "title": "Prestadores de serviços, terceirização e modelos de trabalho",
+                            "copy": "Orientamos a contratação e a gestão de prestadores de serviços, profissionais autônomos, pessoas jurídicas e empresas terceirizadas, com análise das condições efetivas de execução das atividades e dos riscos de reconhecimento de vínculo de emprego ou de responsabilização da contratante. Nossa atuação inclui a revisão de contratos, a definição de procedimentos de acompanhamento de fornecedores e a orientação das equipes internas quanto à condução dessas relações. Também assessoramos negócios digitais e plataformas na avaliação jurídica de seus modelos de relacionamento com profissionais e parceiros."
+                        },
+                        {
+                            "id": "jornada-trabalho-remoto-disponibilidade",
+                            "title": "Jornada de trabalho, trabalho remoto e políticas de disponibilidade",
+                            "copy": "Assessoramos a organização de jornadas, escalas, controles de ponto, compensação de horários e bancos de horas, bem como o tratamento de horas extraordinárias, intervalos, trabalho noturno e períodos de disponibilidade. Elaboramos e revisamos instrumentos e políticas para trabalho presencial, híbrido e teletrabalho, contemplando aspectos como fornecimento de equipamentos, despesas, uso de ferramentas corporativas e comunicação fora do expediente."
+                        },
+                        {
+                            "id": "remuneracao-beneficios-incentivos",
+                            "title": "Remuneração, benefícios e incentivos",
+                            "copy": "Prestamos consultoria na estruturação e revisão de políticas de remuneração fixa e variável, comissões, gratificações, bonificações, prêmios, benefícios e programas de participação nos lucros ou resultados. Em conjunto com as áreas societária e tributária, apoiamos a avaliação de planos de incentivo de longo prazo e participação societária, incluindo stock options e instrumentos correlatos. Analisamos critérios de elegibilidade, regras de aquisição e pagamento, efeitos do desligamento e potenciais repercussões trabalhistas e previdenciárias."
+                        },
+                        {
+                            "id": "politicas-internas-governanca-trabalhista",
+                            "title": "Políticas internas e governança trabalhista",
+                            "copy": "Elaboramos e revisamos regulamentos internos, códigos de conduta e políticas relacionadas à gestão de pessoas, incluindo uso de recursos corporativos, despesas e reembolsos, conflitos de interesses, relacionamento no ambiente de trabalho e aplicação de medidas disciplinares. Auxiliamos na definição de responsabilidades, fluxos de aprovação e procedimentos de documentação, buscando consistência entre as regras estabelecidas e as práticas efetivamente adotadas pela empresa."
+                        },
+                        {
+                            "id": "prevencao-assedio-discriminacao-investigacoes",
+                            "title": "Prevenção ao assédio, discriminação e investigações internas",
+                            "copy": "Assessoramos a implementação de medidas de prevenção e enfrentamento ao assédio moral e sexual, à discriminação e a outras condutas inadequadas no ambiente de trabalho. Em integração com a prática de Compliance, apoiamos o recebimento e a apuração de denúncias, a condução de entrevistas, a preservação de evidências e a avaliação de medidas de proteção e disciplinares. Nossa atuação considera a confidencialidade, a proteção contra retaliações e o tratamento adequado das pessoas envolvidas."
+                        },
+                        {
+                            "id": "diversidade-inclusao-equidade",
+                            "title": "Diversidade, inclusão e equidade",
+                            "copy": "Oferecemos suporte jurídico à estruturação de iniciativas de diversidade e inclusão, acessibilidade, equidade remuneratória e prevenção de práticas discriminatórias em recrutamento, seleção, promoção e desligamento. Também orientamos o atendimento às obrigações relativas à contratação de pessoas com deficiência, reabilitados e aprendizes, incluindo análise documental, acompanhamento de dificuldades de implementação e suporte em fiscalizações."
+                        },
+                        {
+                            "id": "saude-seguranca-trabalho",
+                            "title": "Saúde e segurança do trabalho",
+                            "copy": "Prestamos assessoria jurídica em questões relacionadas à saúde e segurança ocupacional, em articulação com os profissionais técnicos responsáveis. Nossa atuação abrange a análise de obrigações e documentos, o suporte à prevenção e gestão de riscos ocupacionais, inclusive psicossociais, e a orientação em casos de acidentes de trabalho, doenças ocupacionais, afastamentos e retorno às atividades. Também acompanhamos controvérsias sobre insalubridade, periculosidade, adaptações das condições de trabalho e responsabilidades decorrentes desses eventos."
+                        },
+                        {
+                            "id": "relacoes-sindicais-negociacoes-coletivas",
+                            "title": "Relações sindicais e negociações coletivas",
+                            "copy": "Assessoramos o enquadramento sindical e a identificação e interpretação de convenções e acordos coletivos aplicáveis às atividades da empresa. Prestamos suporte na interlocução com sindicatos e na preparação, negociação e revisão de instrumentos coletivos, considerando as necessidades operacionais e os limites jurídicos pertinentes. Também apoiamos a gestão de conflitos coletivos, movimentos grevistas e negociações relacionadas a reorganizações empresariais."
+                        },
+                        {
+                            "id": "desligamentos-reestruturacoes-equipes",
+                            "title": "Desligamentos e reestruturações de equipes",
+                            "copy": "Orientamos desligamentos individuais e coletivos, programas de desligamento voluntário, aplicação de medidas disciplinares e rescisões por justa causa, com avaliação dos fundamentos, riscos e documentos de suporte. Assessoramos a condução de situações sensíveis envolvendo estabilidades, afastamentos, cargos de liderança e disputas em curso, além de apoiar a negociação de soluções consensuais e a formalização dos instrumentos pertinentes."
+                        },
+                        {
+                            "id": "auditorias-operacoes-societarias",
+                            "title": "Auditorias e operações societárias",
+                            "copy": "Realizamos auditorias jurídicas trabalhistas para identificação de passivos, avaliação de práticas internas e definição de planos de adequação. Em operações de aquisição, investimento, fusão, incorporação e reorganização societária, conduzimos due diligence trabalhista e apoiamos a análise de contingências, sucessão de empregadores, responsabilidades e cláusulas de alocação de riscos. Também assessoramos a integração de equipes e a harmonização de políticas e benefícios após a operação."
+                        },
+                        {
+                            "id": "protecao-dados-tecnologia-relacoes-trabalho",
+                            "title": "Proteção de dados e tecnologia nas relações de trabalho",
+                            "copy": "Em conjunto com as práticas de Proteção de Dados Pessoais e Inteligência Artificial, assessoramos o tratamento de dados de candidatos, empregados, dependentes e prestadores de serviços. Avaliamos procedimentos de recrutamento, verificações de antecedentes, uso de biometria, monitoramento de ferramentas corporativas e adoção de sistemas de inteligência artificial na seleção e gestão de pessoas. Nossa atuação busca compatibilizar as finalidades empresariais com a privacidade, a transparência e a prevenção de decisões discriminatórias."
+                        },
+                        {
+                            "id": "fiscalizacoes-procedimentos-administrativos",
+                            "title": "Fiscalizações e procedimentos administrativos",
+                            "copy": "Representamos empresas em fiscalizações trabalhistas, respostas a notificações, autos de infração e processos administrativos, incluindo a organização de documentos e a preparação de manifestações, defesas e recursos. Atuamos, ainda, em procedimentos e inquéritos civis perante o Ministério Público do Trabalho, bem como na negociação e no acompanhamento de Termos de Ajustamento de Conduta."
+                        },
+                        {
+                            "id": "contencioso-trabalhista-solucao-disputas",
+                            "title": "Contencioso trabalhista e solução de disputas",
+                            "copy": "Representamos empresas em reclamações trabalhistas individuais, ações coletivas e demais controvérsias relacionadas às relações de trabalho, abrangendo a definição da estratégia, a elaboração de defesas e recursos, a participação em audiências, o acompanhamento de perícias e a atuação nas fases de liquidação e execução. Avaliamos oportunidades de negociação e composição, inclusive por acordos extrajudiciais e sua submissão à homologação quando cabível, considerando os custos, as perspectivas de êxito e os impactos de cada disputa para o negócio."
+                        },
+                        {
+                            "id": "gestao-contingencias-treinamentos",
+                            "title": "Gestão de contingências e treinamentos",
+                            "copy": "Apoiamos o acompanhamento do passivo trabalhista, a avaliação jurídica de riscos para subsidiar o provisionamento e a identificação de causas recorrentes de litígios, com recomendações para aprimoramento das práticas internas. Também realizamos treinamentos personalizados para lideranças e equipes de Recursos Humanos sobre gestão de pessoas, prevenção de assédio, jornada, documentação de decisões e outros temas relevantes à realidade do cliente."
+                        }
+                    ]
+                }
+            },
+            {
                 "title": "Tributário",
                 "imageSrc": "/modals/tributario.png",
                 "content": {
@@ -356,7 +445,7 @@
         "profile": {
             "name": "Maurício Tamer",
             "role": "Sócio",
-            "picture": "/Mauricio_tamer_2026.jpeg",
+            "picture": "/Mauricio_tamer_2026_new.jpeg",
             "linkedin": "https://www.linkedin.com/in/mauríciotamer/",
             "lattes": "https://lattes.cnpq.br/1292641448156094",
             "bio": "Com 15 anos de experiência nos setores privado, público e na academia, Maurício Tamer procura prestar a melhor assessoria preventiva a clientes em assuntos relacionados a conformidade jurídica, mitigação de riscos e contratos para proteção e escalabilidade ao negócio. Acredita que o resultado eficiente é a melhor conquista.\n\n Com foco nas diversas práticas do Escritório, auxilia os clientes na estruturação e implementação de negócios e a elaboração e revisão dos documentos pertinentes como regulamentos, políticas, avaliações de risco e contratos, treinamentos e estratégias de conscientização e governança corporativa. \n\nAtua também na defesa administrativa e judicial dos interesses dos clientes, sempre prezando por uma abordagem técnica, tática e estratégica.",
